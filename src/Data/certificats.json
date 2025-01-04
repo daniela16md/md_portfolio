@@ -1,0 +1,95 @@
+{
+    "certificats": [
+        {
+            "id": 1,
+            "tittle": "Formation",
+            "image":"formation.webp",
+            "alt": "Certificat Formation"
+        },
+        {
+            "id": 2,
+            "tittle": "HTML et CSS",
+            "image":"HTML.webp",
+            "alt": "Certificat HTML et CSS"
+        },
+        {
+            "id": 3,
+            "tittle": "Figma",
+            "image":"Figma.webp",
+            "alt": "Certificat Figma"
+        },
+        {
+            "id": 4,
+            "tittle": "Animations CSS",
+            "image":"animations.webp",
+            "alt": "Certificat Animations CSS"
+        },
+        {
+            "id": 5,
+            "tittle": "Git et GitHub",
+            "image":"Github.webp",
+            "alt": "Certificat Git et GitHub"
+        },
+        {
+            "id": 6,
+            "tittle": "Api Rest",
+            "image":"API.webp",
+            "alt": "Certificat API Rest"
+        },
+        {
+            "id": 7,
+            "tittle": "Java-script",
+            "image":"Javascript.webp",
+            "alt": "Certificat JavaScript"
+        },
+        {
+            "id": 8,
+            "tittle": "Algorithmes",
+            "image":"algorithmes.webp",
+            "alt": "Certificat Algorithmes"
+        },
+        {
+            "id": 9,
+            "tittle": "Site web",
+            "image":"online.webp",
+            "alt": "Certificat Site web"
+        },
+        {
+            "id": 10,
+            "tittle": "Tests techniques",
+            "image": "TestsTechniques.webp",
+            "alt": "Certificat Tests techniques"
+        },
+        {
+            "id": 11,
+            "tittle": "Aplication React",
+            "image": "React.webp",
+            "alt": "Certificat Aplication React"
+        },
+        {
+            "id": 12,
+            "tittle": "SASS",
+            "image": "Sass.webp",
+            "alt": "Certificat SASS"
+        },
+        {
+            "id": 13,
+            "tittle": "Corrigez vos bugs",
+            "image": "Bugs.webp",
+            "alt": "Certificat Corrigez vos bugs"
+        },
+        {
+            "id": 14,
+            "tittle": "SEO",
+            "image": "SEO.webp",
+            "alt": "Certificat SEO"
+        },
+        {
+            "id": 15,
+            "tittle": "Google",
+            "image": "google.webp",
+            "alt": "Certificat Google Ateliers Numériques",
+            "description": "Certificat Google Ateliers Numériques"
+        }
+    ]
+}

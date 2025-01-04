@@ -1,0 +1,20 @@
+{
+    "diplomes": [
+        {
+            "id": 1,
+            "name": "Baccalauret S",
+            "year": "2003"
+        },
+        {
+            "id": 2,
+            "name": "DEUST Pharmacie",
+            "year": "2005"
+        },
+        {
+            "id": 3,
+            "name": "Secretaire Assistant Medico-social",
+            "year": "2021"
+        }
+      
+    ]
+}

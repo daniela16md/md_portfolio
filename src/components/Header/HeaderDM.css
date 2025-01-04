@@ -1,0 +1,161 @@
+.headerDM {
+    position: fixed;
+    background-color: #fafafa;
+    z-index: 1000;
+    top: 0;  
+    left: 0;
+    right: 0;
+    color: white;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    z-index: 1000; 
+    height: 60px; 
+}
+
+.headerDMleft {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: bold;
+    gap: 20px;
+    width: 20%;
+}
+
+.headerDMright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 70px;
+}
+
+.pheader {
+    margin-left: 70px;
+    color: darkcyan;
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotateDM 4s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes rotateDM {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+body {
+    padding-top: 80px; 
+    scroll-behavior: smooth;
+}
+
+.divhomebuttons ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 40px;
+}
+
+.divhomebuttons .nav-link{
+    text-decoration: none;
+    color: #007272;
+    
+}
+.divhomebuttons .nav-link:hover {
+    border-top: 2px solid darkcyan; 
+    padding-top: 18px;
+}
+.divhomebuttons .nav-link.active {
+    color: #fff; 
+    background-color: darkcyan; 
+    border-bottom: 2px solid white; 
+}
+
+@media (min-width: 768px) {
+.hamburger-icon {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    position: static;
+    background-color: transparent;
+    margin: 0;
+}
+
+}
+.divhomebuttons {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    padding-right: 10%;
+}
+
+.buttoncontact {
+    color: darkcyan; 
+    margin-left: 5px;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+  
+.hamburgerline {
+    width: 30px;
+    height: 3px;
+    background-color: darkcyan;
+}
+@media (max-width: 1024px) {
+    .divhomebuttons{ 
+        gap:10%;
+    }
+}
+@media (max-width: 767.99px) {
+    .headerDM {
+        flex-direction: row-reverse;
+        padding-left: 5%;
+        padding-right: 15%;
+    }
+   
+    .divhomebuttons {
+       flex-direction: column;
+        width: 30%;
+        background-color: #fafafa;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 10;
+        padding-left: 5%;
+        border-radius: 0 0 20px 20px;
+        opacity: 0;
+    }
+    .divhomebuttons ul {
+        flex-direction: column;
+    }
+    .divhomebuttons.open {
+        opacity: 1;
+        transition: opacity 2s ease-in-out; 
+    }
+    .divhomebuttons .nav-link:hover {
+        border-bottom: 2px solid darkcyan; 
+        padding-bottom: 5px;
+        border-top: none;
+    }
+    .hamburger {
+        display: flex; 
+    }
+  
+   
+}

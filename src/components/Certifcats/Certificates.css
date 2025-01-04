@@ -1,0 +1,134 @@
+.certificats-container {
+  text-align: center;
+  padding: 50px;
+}
+  
+.certificats-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.certificat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor:grab;
+  margin-left: 15%;
+}
+  
+.certificat-card:hover {
+  transform: scale(1.05);
+  
+}
+  
+.certificat-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  max-height: 150px;
+}
+  
+.certificat-title {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+  
+.swiper-container {
+  width: 100%;
+  padding-bottom: 50px;
+}
+.modal-content-certificats {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: auto;
+  height: 500px;
+}
+
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-certificat-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: darkcyan;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .certificat-card {
+    width: 300px;
+    margin-left: 7%;
+  }
+
+  .certificat-title {
+    font-size: 15px;
+  }
+  .modal-content-certificats {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .certificat-card {
+    padding: 15px;
+  }
+
+  .certificat-title {
+    font-size: 18px;
+  }
+}
+.swiper-buttons{
+  display: flex;
+  justify-content: space-evenly;
+}
+button {
+  padding: 10px 20px;
+  background-color:  darkcyan;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+ color: darkcyan;
+ background-color: rgb(231, 228, 228);
+}
+
