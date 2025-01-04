@@ -3,91 +3,91 @@
         {
             "id": 1,
             "tittle": "Formation",
-            "image":"formation.webp",
+            "image":"https://daniela16md.github.io/my_portfolio/formation.webp",
             "alt": "Certificat Formation"
         },
         {
             "id": 2,
             "tittle": "HTML et CSS",
-            "image":"HTML.webp",
+            "image":"https://daniela16md.github.io/my_portfolio/HTML.webp",
             "alt": "Certificat HTML et CSS"
         },
         {
             "id": 3,
             "tittle": "Figma",
-            "image":"Figma.webp",
+            "image":"https://daniela16md.github.io/my_portfolio/Figma.webp",
             "alt": "Certificat Figma"
         },
         {
             "id": 4,
             "tittle": "Animations CSS",
-            "image":"animations.webp",
+            "image":"https://daniela16md.github.io/my_portfolio/animations.webp",
             "alt": "Certificat Animations CSS"
         },
         {
             "id": 5,
             "tittle": "Git et GitHub",
-            "image":"Github.webp",
+            "image":"https://daniela16md.github.io/my_portfolio/Github.webp",
             "alt": "Certificat Git et GitHub"
         },
         {
             "id": 6,
             "tittle": "Api Rest",
-            "image":"API.webp",
+            "image":"https://daniela16md.github.io/my_portfolio/API.webp",
             "alt": "Certificat API Rest"
         },
         {
             "id": 7,
             "tittle": "Java-script",
-            "image":"Javascript.webp",
+            "image":"https://daniela16md.github.io/my_portfolio/Javascript.webp",
             "alt": "Certificat JavaScript"
         },
         {
             "id": 8,
             "tittle": "Algorithmes",
-            "image":"algorithmes.webp",
+            "image":"https://daniela16md.github.io/my_portfolio/algorithmes.webp",
             "alt": "Certificat Algorithmes"
         },
         {
             "id": 9,
             "tittle": "Site web",
-            "image":"online.webp",
+            "image":"https://daniela16md.github.io/my_portfolio/online.webp",
             "alt": "Certificat Site web"
         },
         {
             "id": 10,
             "tittle": "Tests techniques",
-            "image": "TestsTechniques.webp",
+            "image": "https://daniela16md.github.io/my_portfolio/TestsTechniques.webp",
             "alt": "Certificat Tests techniques"
         },
         {
             "id": 11,
             "tittle": "Aplication React",
-            "image": "React.webp",
+            "image": "https://daniela16md.github.io/my_portfolio/React.webp",
             "alt": "Certificat Aplication React"
         },
         {
             "id": 12,
             "tittle": "SASS",
-            "image": "Sass.webp",
+            "image": "https://daniela16md.github.io/my_portfolio/Sass.webp",
             "alt": "Certificat SASS"
         },
         {
             "id": 13,
             "tittle": "Corrigez vos bugs",
-            "image": "Bugs.webp",
+            "image": "https://daniela16md.github.io/my_portfolio/Bugs.webp",
             "alt": "Certificat Corrigez vos bugs"
         },
         {
             "id": 14,
             "tittle": "SEO",
-            "image": "SEO.webp",
+            "image": "https://daniela16md.github.io/my_portfolio/SEO.webp",
             "alt": "Certificat SEO"
         },
         {
             "id": 15,
             "tittle": "Google",
-            "image": "google.webp",
+            "image": "https://daniela16md.github.io/my_portfolio/google.webp",
             "alt": "Certificat Google Ateliers Numériques",
             "description": "Certificat Google Ateliers Numériques"
         }
