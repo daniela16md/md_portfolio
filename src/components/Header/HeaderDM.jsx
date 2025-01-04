@@ -18,7 +18,7 @@ function HeaderDM() {
     <header className="headerDM">
       <div className="headerDMleft">
         <div className="pheader-container">
-          <p className="pheader">DM</p>
+          <h4 className="pheader">DM</h4>
         </div>
       </div>
       

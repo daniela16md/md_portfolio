@@ -46,10 +46,10 @@ function Certificates() {
             <div className="certificat-card">
               <img 
                 src={certificat.image} 
-                alt={certificat.tittle || 'Certificat'}
+                alt={certificat.alt || 'Certificat'}
                 className="certificat-image" 
               />
-              {certificat.tittle && <p className="certificat-title">{certificat.tittle}</p>}
+              {certificat.tittle && <h3 className="certificat-title">{certificat.tittle}</h3>}
             </div>
           </SwiperSlide>
         ))}
@@ -82,7 +82,7 @@ function Certificates() {
               width="250"
               height="200"
             />
-            <p>{currentCertificat.tittle}</p>
+            <h3>{currentCertificat.tittle}</h3>
             <p>{currentCertificat.description || 'Certificat obtenu en cours de formation Openclassrooms.'}</p>
           </div>
         )}
