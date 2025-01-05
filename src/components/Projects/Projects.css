@@ -1,6 +1,7 @@
 .projects-page{
     text-align: center;
     padding: 20px;
+    margin-bottom: 70px;
 }
 .project-image{
     height: 40%;
@@ -19,7 +20,6 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
-   
 }
   
 .modal-content {
@@ -122,4 +122,61 @@
      padding: 0;
     } 
 }
+@keyframes dropIn {
+    from { 
+        opacity: 0;
+        transform: translateY(-100px); /* L'élément arrive de haut */
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0); /* Position finale */
+    }
+}
 
+.projects-list .project-card {
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: dropIn 0.8s ease-out forwards; /* Animation avec durée et état final */
+    animation-play-state: paused; /* L'animation commence en pause */
+}
+
+.projects-list.drop-in .project-card {
+    animation-play-state: running; /* Une fois la classe 'drop-in' appliquée, l'animation se lance */
+}
+
+/* Chaque projet aura un délai d'animation progressif */
+.projects-list .drop-in .project-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.projects-list .drop-in .project-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.projects-list .drop-in .project-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.projects-list .drop-in .project-card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.projects-list .drop-in .project-card:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.projects-list .drop-in .project-card:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.projects-list .drop-in .project-card:nth-child(7) {
+    animation-delay: 1.4s;
+}
+
+.projects-list .drop-in .project-card:nth-child(8) {
+    animation-delay: 1.6s;
+}
+
+.projects-list .drop-in .project-card:nth-child(9) {
+    animation-delay: 1.8s;
+}

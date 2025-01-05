@@ -44,7 +44,7 @@ const Skills = () => {
 
   return (
     <div className="softskills-container">
-      <h2> Skills</h2>
+      <h2 className='sectionh2'> Skills</h2>
       <div className="skills-list">
         {isLoaded ? (
           skills.map((skill, index) => {

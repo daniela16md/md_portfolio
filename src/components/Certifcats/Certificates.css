@@ -1,6 +1,7 @@
 .certificats-container {
   text-align: center;
   padding: 50px;
+  margin-bottom: 70px;
 }
   
 .certificats-list {
@@ -15,7 +16,7 @@
   align-items: center;
   width: 200px;
   text-align: center;
-  padding: 15px;
+  padding: 0 15px 15px 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor:grab;
   margin-left: 15%;

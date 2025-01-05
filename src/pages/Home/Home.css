@@ -1,3 +1,35 @@
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); 
+    animation: fadeIn 1s forwards;
+}
+
+.delay-0s {
+    animation-delay: 0s; 
+}
+
+.delay-1s {
+    animation-delay: 1s;
+}
+
+.delay-2s {
+    animation-delay: 3s;
+}
+
+.delay-3s {
+    animation-delay: 5s;
+}
+
+.delay-4s {
+    animation-delay: 6s;
+}
+
+@keyframes fadeIn {
+to {
+    opacity: 1;
+    transform: translateY(0); 
+}
+}
 .home {
     padding: 20px;
     font-family: 'Arial', sans-serif;
@@ -69,9 +101,7 @@
     width: 0; 
     animation: typing 4s steps(40) forwards;
     margin-bottom: 20px; 
-    color:black;
 }
-
 @keyframes typing {
     from {
         width: 0; 
@@ -82,29 +112,28 @@
 }
 
 .line:nth-child(1) {
-    animation: typing 2s steps(40) 3s forwards; 
+    animation: typing 1s steps(40) 3s forwards; 
     font-size: 26px;
 }
 
 .line:nth-child(2) {
-    animation: typing 2s steps(40) 5s forwards; 
+    animation: typing 1s steps(40) 4s forwards; 
 }
 
 .line:nth-child(3) {
-    animation: typing 2s steps(40) 7s forwards; 
+    animation: typing 1s steps(40) 6s forwards; 
 }
 .line:nth-child(4) {
-    animation: typing 2s steps(40) 10s forwards; 
+    animation: typing 1s steps(40) 7.5s forwards; 
 }
 .line:nth-child(5) {
-    animation: typing 2s steps(40) 14s forwards; 
+    animation: typing 1s steps(40) 9s forwards; 
     color: #007272;
     text-decoration: none;
     &:hover {
         text-decoration: underline;
     }
 }
-
 
 @media (max-width: 767.99px) {
     .line {
@@ -119,7 +148,6 @@
        gap: 0;
        gap: 20px;
     }
-   
 }
 .scroll-to-top {
     position: fixed;

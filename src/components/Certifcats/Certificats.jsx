@@ -26,7 +26,7 @@ function Certificates() {
 
   return (
     <div className="certificats-container">
-      <h2>Mes Certificats</h2>
+      <h2 className='sectionh2'>Mes Certificats</h2>
 
       <Swiper
         ref={swiperRef} 

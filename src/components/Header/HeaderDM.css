@@ -35,11 +35,12 @@
 
 .pheader {
     margin-left: 70px;
-    color: darkcyan;
+    color:#007272;
     border-radius: 50%;
     display: inline-block;
-    animation: rotateDM 4s linear infinite;
+    animation: color-change 5s infinite 3s, rotateDM 5s linear infinite;
     animation-delay: 3s;
+    
 }
 @keyframes rotateDM {
     0% {
@@ -48,7 +49,24 @@
     100% {
       transform: rotate(360deg);
     }
-  }
+}
+@keyframes color-change {
+    0% {
+        color: #007272; 
+    }
+    25% {
+        color: #2e8b57; 
+    }
+    50% {
+        color: darkseagreen;
+    }
+    75% {
+        color: darkslategray;
+    }
+    100% {
+        color: darkolivegreen; 
+    }
+}
 body {
     padding-top: 80px; 
     scroll-behavior: smooth;

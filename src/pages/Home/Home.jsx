@@ -30,12 +30,12 @@ const Home = () => {
 
 
   return (
-    <div className="home pagecontent">
+    <div className="home pagecontent" >
       {loading && <Loader />} 
-     
+
+     {!loading && <div>
       <div className='divhome'>
-        
-        <div className='divhomediv'>
+        <div className='divhomediv fade-in delay-0s'>
           <h1 className='line'>Bonjour,</h1>
           <p className="line">Je m'appelle Daniela,</p>
           <p className="line">je suis développeuse web</p>
@@ -44,17 +44,20 @@ const Home = () => {
         </div>
         <img className="photoweb" src={PhotoWeb} alt="Daniela" loading="lazy" sizes='200' height='200' />
       </div>
-      <div id="projets">
-        <Projects />
+      <div id="projets" className="fade-in delay-1s">
+        {!loading && <Projects />}
       </div>
-      <div id="skills">
+      <div id="skills" className="fade-in delay-2s">
         <Skills />
-      </div>
-      <Parcours id="parcours" />
-      <div id="certificats">
+      </div >
+      <div id="parcours" className="fade-in delay-3s">
+        <Parcours />
+        </div>
+      <div id="certificats" className="fade-in delay-4s">
         <Certificates />
       </div>
       <ScrollToTop />
+      </div>}
     </div>
   );
 };
