@@ -38,7 +38,7 @@ function Projects() {
       <h2>Mes Projets</h2>
 
       <div className="filters">
-        <label htmlFor="techFilter">Filtrer par technologie</label>
+        <label htmlFor="techFilter" className='labelfiltre'>Filtrer par technologie</label>
         <select id="techFilter" value={selectedTech} onChange={handleTechChange}>
           <option value="">Tous les projets</option>
           {techOptions.map((tech, index) => (

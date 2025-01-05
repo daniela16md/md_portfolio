@@ -3,7 +3,6 @@
 }
 body,html {
   margin: auto;
-  max-width: 1440px;
   min-width: 320px;
   background-color:rgb(231, 228, 228);
 }

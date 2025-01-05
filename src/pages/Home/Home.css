@@ -98,6 +98,11 @@
 }
 .line:nth-child(5) {
     animation: typing 2s steps(40) 14s forwards; 
+    color: #007272;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 
@@ -112,6 +117,7 @@
     }
     .divhome {
        gap: 0;
+       gap: 20px;
     }
    
 }
@@ -140,3 +146,30 @@
     color: #007272;
 }
   
+@media (max-width: 400px) {
+    .divhome {
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+     }
+    .line:nth-child(1) {
+        padding-left: 30%;
+    }
+    
+    .line:nth-child(2) {
+        padding-left: 25%;
+    }
+    
+    .line:nth-child(3) {
+        padding-left: 20%;
+    }
+    .line:nth-child(4) {
+        padding-left: 5%;
+    }
+    .line:nth-child(5) {
+        padding-left: 30%;
+    }
+    .photoweb {
+        margin-left: 25%;
+    }
+}

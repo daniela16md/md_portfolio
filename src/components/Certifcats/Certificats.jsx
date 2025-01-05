@@ -57,10 +57,10 @@ function Certificates() {
 
       <div className="swiper-buttons">
         <button className="swiper-button-left" onClick={() => swiperRef.current.swiper.slidePrev()} aria-label="Précédent">
-          <FaChevronLeft size={30} />
+          <FaChevronLeft className='flecheswipper' />
         </button>
         <button className="swiper-button-right" onClick={() => swiperRef.current.swiper.slideNext()} aria-label="Suivant">
-          <FaChevronRight size={30} />
+          <FaChevronRight className='flecheswipper' />
         </button>
       </div>
 

@@ -6,7 +6,7 @@ import Certificates from '../../components/Certifcats/Certificats';
 import Projects from '../../components/Projects/Projects';
 import PhotoWeb from '../../images/PhotoWeb.webp';
 import Loader from '../../components/Loader/Loader';
-import ScrollToTop from '../../components/Top/ScrollToTop'
+import ScrollToTop from '../../components/Top/ScrollToTop';
 import './Home.css';
 
 const Home = () => {
@@ -40,7 +40,7 @@ const Home = () => {
           <p className="line">Je m'appelle Daniela,</p>
           <p className="line">je suis développeuse web</p>
           <p className="line">passionnée par les technologies frontend.</p>
-          <Link to="/apropos" className='line'>Apropos de moi </Link>
+          <Link to="/apropos" className='line'>À propos de moi </Link>
         </div>
         <img className="photoweb" src={PhotoWeb} alt="Daniela" loading="lazy" sizes='200' height='200' />
       </div>

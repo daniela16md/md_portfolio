@@ -3,7 +3,7 @@
    margin-bottom: 10%;
 }
 .homep {
-    overflow: hidden;
+    overflow-x: hidden;
     overflow-y: visible;
     white-space: nowrap; 
     width: 0; 
@@ -11,6 +11,7 @@
     margin-bottom: 20px; 
     font-size: 16px;
 }
+
 @keyframes typing {
     from {
         width: 0; 
@@ -60,7 +61,7 @@
 }
 @media (min-width: 400px) {
     .homep {
-        font-size: 8px;
+        font-size: 9px;
     }
 }
 @media (min-width: 768px) {

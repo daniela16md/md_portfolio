@@ -10,6 +10,7 @@ html {
 }
 main {
   min-height: 100vh;
+  
 }
 
 #root {
@@ -17,9 +18,21 @@ main {
   margin: 0;
 }
 .home {
-  
   padding: 0 30px;
 }
 h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+ 
+
 }

@@ -59,6 +59,14 @@ h2 {
     .carrousel-item{
         width: 250px;
     }
+    .left {
+        position: relative;
+        left: -30px;
+    }
+    .right{
+        position: relative;
+        right: -30px;
+    }
    
 
 }

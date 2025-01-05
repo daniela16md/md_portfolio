@@ -1,8 +1,12 @@
 .projects-page{
     text-align: center;
+    padding: 20px;
 }
 .project-image{
     height: 40%;
+}
+.labelfiltre {
+    display: none;
 }
 .modal-overlay {
     position: fixed;
@@ -54,9 +58,6 @@
     display: flex;
     justify-content: space-around;
     cursor: pointer;
-}
-.projects-page {
-    padding: 20px;
 }
   
 .projects-list {
@@ -116,5 +117,9 @@
     border-radius: 5px;
     font-size: 16px;
 }
-
+@media (max-width: 767.99px) {
+    .projects-page{ 
+     padding: 0;
+    } 
+}
 
