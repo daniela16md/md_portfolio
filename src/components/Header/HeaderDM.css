@@ -15,7 +15,6 @@
     z-index: 1000; 
     height: 60px; 
 }
-
 .headerDMleft {
     display: flex;
     justify-content: space-between;
@@ -24,13 +23,12 @@
     gap: 20px;
     width: 20%;
 }
-
 .pheader {
     margin-left: 70px;
     color:#007272;
     border-radius: 50%;
     display: inline-block;
-    animation: color-change 8s infinite, rotateDM 8s linear infinite;
+    animation: rotateDM 9s linear infinite;
     animation-delay: 3s;
 }
 @keyframes rotateDM {
@@ -41,28 +39,10 @@
       transform: rotate(360deg);
     }
 }
-@keyframes color-change {
-    0% {
-        color: #007272; 
-    }
-    25% {
-        color: #2e8b57; 
-    }
-    50% {
-        color: darkseagreen;
-    }
-    75% {
-        color: darkslategray;
-    }
-    100% {
-        color: darkolivegreen; 
-    }
-}
 body {
     padding-top: 80px; 
     scroll-behavior: smooth;
 }
-
 .divhomebuttons ul {
     list-style-type: none;
     padding: 0;
@@ -70,7 +50,6 @@ body {
     display: flex;
     gap: 40px;
 }
-
 .divhomebuttons .nav-link{
     text-decoration: none;
     color: #007272;
@@ -85,19 +64,16 @@ body {
     background-color: darkcyan; 
     border-bottom: 2px solid white; 
 }
-
 @media (min-width: 768px) {
-.hamburger-icon {
-    display: flex;
-}
-
-.menu {
-    display: flex;
-    position: static;
-    background-color: transparent;
-    margin: 0;
-}
-
+    .hamburger-icon {
+        display: flex;
+    }
+    .menu {
+        display: flex;
+        position: static;
+        background-color: transparent;
+        margin: 0;
+    }
 }
 .divhomebuttons {
     display: flex;
@@ -105,7 +81,6 @@ body {
     gap: 15%;
     padding-right: 10%;
 }
-
 .buttoncontact {
     color: darkcyan; 
     margin-left: 5px;
@@ -135,7 +110,6 @@ body {
         padding-left: 5%;
         padding-right: 15%;
     }
-   
     .divhomebuttons {
        flex-direction: column;
         width: 30%;
@@ -164,7 +138,20 @@ body {
     }
     .hamburger {
         display: flex; 
+    }  
+}
+@media (min-width: 1440px) {
+    .headerDM{
+      padding: 0 20%;
     }
-  
-   
+}
+@media (min-width: 1760px) {
+    .headerDM{
+      padding: 0 20%;
+    }
+  }
+  @media (min-width: 1440px) {
+    .headerDM{
+      padding: 0 2%;
+    }
 }

@@ -72,7 +72,7 @@ const Skills = () => {
             return (
               <div key={skill.id} className="skill-card">
                 {skill.image ? (
-                  <img className="skillimage" src={skill.image} alt={skill.name} />
+                  <img className="skillimage" src={skill.image} alt={skill.alt} />
                 ) : (
                   Icon && <Icon className="skill-icon" style={{ color: skill.color }} />
                 )}

@@ -5,21 +5,21 @@
             "name": "HTML",
             "icon": "FaHtml5",
             "color": "#E44D26",
-            "level": 70
+            "level": 85
         },
         {
             "id": 2,
             "name": "CSS",
             "icon": "FaCss3Alt",
             "color": "#2965F1",
-            "level": 98
+            "level": 80
         },
         {
             "id": 3,
             "name": "Sass",
             "icon": "FaSass",
             "color": "#CD6799", 
-            "level": 80
+            "level": 95
         },
         {
             "id": 4,
@@ -33,21 +33,21 @@
             "name": "React",
             "icon": "FaReact",
             "color": "#61DBFB",
-            "level": 90
+            "level": 85
         },
         {
             "id": 6,
             "name": "Redux",
             "icon": "FaCodeBranch",
             "color": "#764ABC",
-            "level": 70
+            "level": 80
         },
         {
             "id": 7,
             "name": "Debug",
             "icon": "FaBug",
             "color": "#D8D8D8",
-            "level": 70
+            "level": 85
         },
         {
             "id": 8,
@@ -61,21 +61,21 @@
             "name": "Swagger",
             "icon": "SiSwagger",
             "color": "green",
-            "level": 80 
+            "level": 85 
         },
         {
             "id": 10,
             "name": "Github",
             "icon": "FaGithub",
             "color": "#333",
-            "level": 80
+            "level": 90
         },
         {
             "id": 11,
             "name": "Node.JS",
             "icon": "IoLogoNodejs",
             "color": "green",
-            "level": 80
+            "level": 90
         },
         {
             "id": 12,
@@ -89,18 +89,16 @@
             "name": "AGILE",
             "icon": " FaCogs",
             "color": "#61DBFB",
-            "level": 90
+            "level": 95
         },
         {
             "id": 14,
             "name": "My top skill",
             "image": "bugexpert.webp",
             "color": "green",
-            "level": 100
+            "level": 100,
+            "alt": "Photo skill"
         }
-
-
-
     ]
-  }
+}
   

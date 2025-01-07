@@ -1,18 +1,21 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
-import Home from './pages/Home/Home';
-import HeaderDM from './components/Header/HeaderDM';
-import Footer from './components/Foooter/Footer';
+const Home = React.lazy(() => import('./pages/Home/Home'));
+const HeaderDM = React.lazy(() => import('./components/Header/HeaderDM'));
+const Footer = React.lazy(() => import('./components/Foooter/Footer'));
+import Loader from './components/Loader/Loader';
 import './App.css'
 
 function App() {
   return (
     <Router basename="/my_portfolio">
-      <HeaderDM />
-      <Routes> 
-        <Route path="/" element={<Home />} />
-      </Routes>
-      <Footer />
+       <Suspense fallback={<div>Chargement des pages...</div>}>
+        <HeaderDM />
+        <Routes> 
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <Footer />
+      </Suspense>
     </Router>
   );
 }

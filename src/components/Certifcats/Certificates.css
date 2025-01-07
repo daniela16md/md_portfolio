@@ -24,7 +24,6 @@
   
 .certificat-card:hover {
   transform: scale(1.05);
-  
 }
   
 .certificat-image {
@@ -49,6 +48,9 @@
   max-width: 500px;
   margin: auto;
   max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .modal-body {

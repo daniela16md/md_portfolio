@@ -1,44 +1,40 @@
 .loader-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
-    z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 9999;
 }
-  
 .loader {
-    display: flex;
-    font-size: 50px;
-    font-weight: bold;
-    color: #ffffff;
-    animation: bounce 1.5s infinite ease-in-out;
+  display: flex;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  animation: bounce 1.5s infinite ease-in-out;
 }
-  
 .letter {
-    margin: 0 5px;
-    animation: bounce-letter 1.5s infinite ease-in-out;
+  margin: 0 5px;
+  animation: bounce-letter 1.5s infinite ease-in-out;
 }
-  
 @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
-  
 @keyframes bounce-letter {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
   

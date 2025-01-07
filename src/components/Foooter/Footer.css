@@ -16,7 +16,6 @@
     align-items: center;
     color: #007272;
 }
-
 .social-links {
     display: flex;
     justify-content: center;
@@ -29,13 +28,13 @@
 }
 .footer-oups{
     font-size: 18px;
-    margin-top: 0;
+    margin-top: 10px;
     color: #007272;
 }
-
 @media (max-width: 768px) {
     .footer{
         margin-bottom: 0;
+        padding: 20px;
     }
     .footerrow,
     .footer-oups {

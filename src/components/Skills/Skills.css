@@ -3,19 +3,16 @@
     padding: 70px;
     margin-bottom: 70px;
 }
-  
 h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
-
 .skills-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
-
 .skill-card {
     display: flex;
     flex-direction: column;
@@ -27,21 +24,17 @@ h2 {
     transition: transform 0.3s ease;
    cursor: pointer;
 }
-
 .skill-card:hover {
     transform: scale(1.1);
 }
-
 .skill-icon {
     font-size: 40px;
     margin-bottom: 10px;
 }
-
 .skill-name {
     font-size: 1rem;
     margin-bottom: 10px;
 }
-
 .progress-bar {
     width: 100%;
     background-color: #fafafa;
@@ -51,7 +44,6 @@ h2 {
     position: relative;
     overflow: hidden;
 }
-
 .progress-fill {
     height: 100%;
     border-radius: 10px;
@@ -71,7 +63,6 @@ h2 {
       width: 100%;
     }
 }
-  
 .arrowleft {
    font-size: 50px;
    display: flex;

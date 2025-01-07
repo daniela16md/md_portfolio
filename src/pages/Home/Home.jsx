@@ -3,7 +3,7 @@ import Parcours from '../../components/Parcours/Parcours';
 import Skills from '../../components/Skills/Skllls';
 import Certificates from '../../components/Certifcats/Certificats';
 import Projects from '../../components/Projects/Projects';
-import PhotoWeb from '../../images/PhotoWeb.webp';
+import PhotoWeb from '../../images/Daniela.webp';
 import Loader from '../../components/Loader/Loader';
 import ScrollToTop from '../../components/Top/ScrollToTop';
 import ReactModal from 'react-modal';
@@ -46,7 +46,7 @@ const Home = () => {
           <p className="line">Je m'appelle Daniela,</p>
           <p className="line">je suis développeuse web</p>
           <p className="line">passionnée par les technologies frontend.</p>
-          <button className='line' onClick={openModal}>À propos de moi </button>
+          <p className='button-line line' onClick={openModal}>À propos de moi </p>
         </div>
         <img className="photoweb" src={PhotoWeb} alt="Daniela" loading="lazy" sizes='200' height='200' />
       </div>

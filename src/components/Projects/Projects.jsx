@@ -50,8 +50,8 @@ function Projects() {
     <div className="projects-page">
       <h2 className='sectionh2'>Mes Projets</h2>
       <div className="filters">
-        <label htmlFor="techFilter" className='labelfiltre' aria-label='filtres'>Filtrer par technologie</label>
-        <select id="techFilter" value={selectedTech} onChange={handleTechChange}>
+        <label htmlFor="techFilter" className='labelfiltre'>Filtrer par technologie</label>
+        <select id="techFilter" value={selectedTech} onChange={handleTechChange} aria-label="Filtrer par technologie" >
           <option value="">Tous les projets</option>
           {techOptions.map((tech, index) => (
             <option key={index} value={tech}>{tech}</option>
