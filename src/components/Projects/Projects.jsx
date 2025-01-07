@@ -76,7 +76,7 @@ function Projects() {
                   <div className='lienssite'>
                     {project.github && (
                       <button className="button-project-link" onClick={() => window.open(project.github, '_blank')} aria-label={`Voir le projet sur GitHub: ${project.name}`}>
-                        <FaGithub /><span className="button-text">Le chantier du mon projet</span>
+                        <FaGithub /><span className="button-text">Le chantier de mon projet</span>
                       </button>
                     )}
                     {project.lien && (

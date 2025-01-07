@@ -31,6 +31,20 @@
     margin-top: 10px;
     color: #007272;
 }
+.mentions:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.modal-content-mentions{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    max-height: max-content;
+    overflow: scroll;
+}
+.modal-content-mentionsul {
+    list-style-type: none;
+}
 @media (max-width: 768px) {
     .footer{
         margin-bottom: 0;
