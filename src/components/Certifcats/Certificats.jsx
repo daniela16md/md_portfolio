@@ -68,7 +68,7 @@ function Certificates() {
         isOpen={isModalOpen}
         onRequestClose={closeModal}
         contentLabel="Certificat Détail"
-        className="modal-content-certificats"
+        className="modal-content modal-content-certificats"
         overlayClassName="modal-overlay"
       >
         {currentCertificat && (

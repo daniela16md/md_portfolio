@@ -25,22 +25,13 @@
     width: 20%;
 }
 
-.headerDMright {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    margin-right: 70px;
-}
-
 .pheader {
     margin-left: 70px;
     color:#007272;
     border-radius: 50%;
     display: inline-block;
-    animation: color-change 5s infinite 3s, rotateDM 5s linear infinite;
+    animation: color-change 8s infinite, rotateDM 8s linear infinite;
     animation-delay: 3s;
-    
 }
 @keyframes rotateDM {
     0% {

@@ -4,23 +4,19 @@
     align-items: center;
     justify-content: center;
     font-size: 24px;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
+.footerrow{
+    display: flex;
+}
 .footer-left {
     display: flex;
     align-items: center;
     color: #007272;
-    margin-left: 5%;
-    padding: 20px;
 }
 
-.footer-meteo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    margin-right: 5%;
-}
 .social-links {
     display: flex;
     justify-content: center;
@@ -31,19 +27,27 @@
     height: 20px;
     color: #007272;
 }
+.footer-oups{
+    font-size: 18px;
+    margin-top: 0;
+    color: #007272;
+}
 
 @media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        padding: 10px;
-        font-size: 18px;
+    .footer{
+        margin-bottom: 0;
     }
-
+    .footerrow,
+    .footer-oups {
+        flex-direction: column;
+        padding: 0 0 10px 10px;
+        font-size: 16px;
+    }
+    .social-links{
+        margin-top: 10px;
+    }
     .footer-left {
         margin-left: 0;
-    }
-    .footer-meteo {
-        margin-right: 0;
     }
 }
   

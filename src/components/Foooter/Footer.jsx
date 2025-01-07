@@ -4,11 +4,12 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-left">
-        &copy; {new Date().getFullYear()} Daniela Mattl. All rights reserved.
-      </div>
-      <div className="social-links">
+    <footer className="footer fade-in delay-3s">
+      <section className='footerrow'>
+        <div className="footer-left">
+          &copy; {new Date().getFullYear()} Daniela Mattl. All rights reserved.
+        </div>
+        <div className="social-links">
           <a href="https://github.com/daniela16md?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub size={30} className="social-icon" />
           </a>
@@ -17,6 +18,10 @@ const Footer = () => {
             <FaEnvelope size={30} className="social-icon" />
           </a>
         </div>
+      </section>
+      <div>
+        <p className='footer-oups'>Oups, tout en bas, il n'y a rien, mais tu peux remonter facilement grâce à la flèche !</p>
+      </div>
     </footer>
   );
 };

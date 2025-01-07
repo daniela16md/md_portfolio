@@ -4,60 +4,33 @@
     margin-bottom: 70px;
 }
 .project-image{
-    height: 40%;
+    object-fit: cover;
 }
 .labelfiltre {
     display: none;
 }
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
   
-.modal-content {
-    background: white;
-    padding: 20px;
-    width: 100%;
-    max-width: 80%;
+.modal-content-projets {
+    width: 80%;
     height: 80%;
-    border-radius: 8px;
-    position: relative;
-    overflow: hidden;
 }
   
-.modal-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: darkcyan;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
-  
-.modal-close:hover {
-    background: darkcyan;
-}
-    
-.project-link:hover {
+.button-text {
+    margin-left: 10px;
+}  
+.button-project-link{
     background-color: #fafafa;
     color: darkcyan;
 }
-
+.button-project-link:hover {
+    background-color: darkcyan;
+    color:#fafafa ;
+}
 .lienssite{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     cursor: pointer;
+    align-items: center;
 }
   
 .projects-list {
@@ -73,7 +46,11 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    height: 400px;
+    min-height: 245px;
+}
+.project-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
 }
   
 .project-card img {
@@ -98,21 +75,27 @@
 .project-card a:hover {
     background-color:  darkcyan;
 }
-  
+.project-details {
+    position: relative; 
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:  #f9f9f9;
+}
 .filters {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    
 }
   
 .filter-label {
     font-weight: bold;
 }
 .filters select {
-    border: 2px solid darkcyan;  
+    border: 2px solid #007272;  
     padding: 10px;
     border-radius: 5px;
     font-size: 16px;
@@ -121,30 +104,32 @@
     .projects-page{ 
      padding: 0;
     } 
+    .project-card{
+        min-height: 248px;
+    }
+    .modal-content{
+        width: 100%;
+    }
 }
 @keyframes dropIn {
     from { 
         opacity: 0;
-        transform: translateY(-100px); /* L'élément arrive de haut */
+        transform: translateY(-100px); 
     }
     to { 
         opacity: 1;
-        transform: translateY(0); /* Position finale */
+        transform: translateY(0); 
     }
 }
-
 .projects-list .project-card {
     opacity: 0;
     transform: translateY(-100px);
-    animation: dropIn 0.8s ease-out forwards; /* Animation avec durée et état final */
-    animation-play-state: paused; /* L'animation commence en pause */
+    animation: dropIn 0.8s ease-out forwards; 
+    animation-play-state: paused; 
 }
-
 .projects-list.drop-in .project-card {
-    animation-play-state: running; /* Une fois la classe 'drop-in' appliquée, l'animation se lance */
+    animation-play-state: running; 
 }
-
-/* Chaque projet aura un délai d'animation progressif */
 .projects-list .drop-in .project-card:nth-child(1) {
     animation-delay: 0.2s;
 }

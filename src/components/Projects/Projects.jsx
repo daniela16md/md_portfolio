@@ -11,6 +11,7 @@ function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false); 
   const [currentUrl, setCurrentUrl] = useState('');
   const [showProjects, setShowProjects] = useState(false);
+  const [activeProject, setActiveProject] = useState(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -38,11 +39,16 @@ function Projects() {
     setIsModalOpen(false);
     setCurrentUrl('');
   };
+  const handleProjectClick = (project) => {
+    setActiveProject(project);
+  };
+  const closeProjectDetails = () => {
+    setActiveProject(null);
+  }
 
   return (
     <div className="projects-page">
       <h2 className='sectionh2'>Mes Projets</h2>
-
       <div className="filters">
         <label htmlFor="techFilter" className='labelfiltre' aria-label='filtres'>Filtrer par technologie</label>
         <select id="techFilter" value={selectedTech} onChange={handleTechChange}>
@@ -63,30 +69,38 @@ function Projects() {
                 animationDelay: `${(index + 1) * 1}s`, 
               }}
             >
-              <img
-                src={project.image}
-                alt={`Image du projet ${project.name}`}
-                className="project-image"
-                loading="lazy"
-                width="300"
-                height="150"
-              />
-              <h3>{project.name}</h3>
-              <p><strong>Technologies:</strong> {project.technologies}</p>
-              <p>{project.text}</p>
-              <div className='lienssite'>
-                {project.github && (
-                  <button className="project-link" onClick={() => window.open(project.github, '_blank')} aria-label={`Voir le projet sur GitHub: ${project.name}`}>
-                    <FaGithub />
-                  </button>
-                )}
-                {project.lien && (
-                  <button className="project-link" onClick={() => openModal(project.lien)} aria-label={`Voir le lien du projet: ${project.name}`}>
-                    <FaLink />
-                  </button>
-                )}
+               {activeProject && activeProject.id === project.id ? ( 
+                <div className="project-details" onClick={closeProjectDetails}>
+                  <p><strong>Technologies:</strong> {project.technologies}</p>
+                  <p>{project.text}</p>
+                  <div className='lienssite'>
+                    {project.github && (
+                      <button className="button-project-link" onClick={() => window.open(project.github, '_blank')} aria-label={`Voir le projet sur GitHub: ${project.name}`}>
+                        <FaGithub /><span className="button-text">Le chantier du mon projet</span>
+                      </button>
+                    )}
+                    {project.lien && (
+                      <button className="button-project-link" onClick={() => openModal(project.lien)} aria-label={`Voir le lien du projet: ${project.name}`}>
+                        <FaLink /> <span className="button-text">Le show en direct</span>
+                      </button>
+                    )}
+                  </div>
+                </div>
+              ) : (
+               <div onClick={() => handleProjectClick(project)}>
+                <img
+                  src={project.image}
+                  alt={`Image du projet ${project.name}`}
+                  className="project-image"
+                  loading="lazy"
+                  width="300"
+                  height="150"
+                  onClick={() => handleProjectClick(project.id)} 
+                />
+                <h3>{project.name}</h3>
+               </div>
+              )}
               </div>
-            </div>
           ))
         ) : (
           <p>Aucun projet trouvé pour cette technologie.</p>
@@ -97,7 +111,7 @@ function Projects() {
         isOpen={isModalOpen}
         onRequestClose={closeModal} 
         contentLabel="Project Link"
-        className="modal-content"
+        className="modal-content modal-content-projets"
         overlayClassName="modal-overlay"
         ariaHideApp={false} 
       >

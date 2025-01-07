@@ -6,6 +6,9 @@
     text-align: center;
     margin-bottom: 70px;
 }
+.carrousel-background {
+    width: 100%;
+}
   
 h2 {
     margin-bottom: 20px;
@@ -35,12 +38,8 @@ h2 {
     transform: translateY(-50%);
     cursor: pointer;
     z-index: 10;
-    color: darkcyan;
+    color:#007272;
     transition: color 0.3s;
-}
-  
-.arrow:hover {
-    color:  darkcyan;
 }
   
 .left {

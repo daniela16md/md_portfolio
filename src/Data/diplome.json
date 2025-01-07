@@ -3,18 +3,28 @@
         {
             "id": 1,
             "name": "Baccalauret S",
-            "year": "2003"
+            "year": "2003",
+            "description": " La base de mon aventure scientifique, ou j'ai appris à calculer des choses que je n'utilise plus jamais, sauf pour impressionner mes proches."
         },
         {
             "id": 2,
             "name": "DEUST Pharmacie",
-            "year": "2005"
+            "year": "2005",
+            "description": "Spécialiste des molécules, des conseils santé et de la lecture de prescriptions quasi illisibles."
         },
         {
             "id": 3,
             "name": "Secretaire Assistant Medico-social",
-            "year": "2021"
+            "year": "2021",
+            "description": "Une formation ou j'ai appris à jongler entre organisation, rigeur et jargon médical. Spoiler : c'est utile dans le code aussi."
+        },
+        {
+            "id": 4,
+            "name": "Bientot Développeuse Web",
+            "year": "2025",
+            "description": "J'échange des heures de cours contre des heures d'écran, transformant café et code en sites qui fonctionnent (promis, c'est possible)."
         }
+    
       
     ]
 }

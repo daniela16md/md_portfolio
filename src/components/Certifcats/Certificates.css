@@ -1,7 +1,7 @@
 .certificats-container {
   text-align: center;
   padding: 50px;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
   
 .certificats-list {
@@ -46,25 +46,9 @@
   padding-bottom: 50px;
 }
 .modal-content-certificats {
-  position: relative;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
   max-width: 500px;
   margin: auto;
-  height: 500px;
-}
-
-.modal-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-height: 400px;
 }
 
 .modal-body {
@@ -119,20 +103,7 @@
   display: flex;
   justify-content: space-evenly;
 }
-button {
-  padding: 10px 20px;
-  background-color:  darkcyan;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
 
-button:hover {
- color: darkcyan;
- background-color: rgb(231, 228, 228);
-}
 @media (max-width: 400px) {
   .certificat-card{
     width: 70%;

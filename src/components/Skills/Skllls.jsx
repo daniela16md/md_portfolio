@@ -2,12 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { FaHtml5, FaCss3Alt, FaSass, FaJsSquare, FaReact, FaCodeBranch, FaBug, FaSearchengin, FaLanguage, FaGithub,} from 'react-icons/fa';
 import { SiSwagger } from "react-icons/si";
 import { IoLogoNodejs } from 'react-icons/io';
+import { FaCogs } from 'react-icons/fa';
 import skillsData from '../../Data/softskills.json';
 import './Skills.css'
 const Skills = () => {
   const [skills, setSkills] = useState([]);
   const [progress, setProgress] = useState([]);  
   const [isLoaded, setIsLoaded] = useState(false); 
+  const [activeSkill, setActiveSkill] = useState(null);
 
   useEffect(() => {
     setSkills(skillsData.skillsData);
@@ -42,6 +44,10 @@ const Skills = () => {
     }
   }, [skills]);
 
+  const handleSkillClick = (skillId) => {
+    setActiveSkill(skillId); 
+  };
+
   return (
     <div className="softskills-container">
       <h2 className='sectionh2'> Skills</h2>
@@ -60,23 +66,28 @@ const Skills = () => {
                         skill.icon === 'FaGithub' ? FaGithub :
                         skill.icon === 'SiSwagger' ? SiSwagger :
                         skill.icon === 'IoLogoNodejs' ? IoLogoNodejs :
+                        skill.icon === ' FaCogs' ?  FaCogs :
                         null;
 
             return (
               <div key={skill.id} className="skill-card">
-                {Icon && <Icon className="skill-icon" style={{ color: skill.color }} />}
-                <p className="skill-name">{skill.name}</p>
+                {skill.image ? (
+                  <img className="skillimage" src={skill.image} alt={skill.name} />
+                ) : (
+                  Icon && <Icon className="skill-icon" style={{ color: skill.color }} />
+                )}
 
+                <p className="skill-name" onClick={() => handleSkillClick(skill.id)}>{skill.name}</p>
                 <div className="progress-bar">
                   <div
-                    className="progress-fill"
+                    className={`progress-fill ${activeSkill === skill.id ? 'animate-progress' : ''}`}
                     style={{
-                      width: `${progress[index]?.level}%`,  
-                      backgroundColor: skill.color,
-                      transition: 'width 0.5s ease-in-out', 
+                      width: `${progress[index]?.level}%`,
+                      backgroundColor: skill.color, 
                     }}
                   ></div>
                 </div>
+                <div className="progress-percentage">{progress[index]?.level}%</div>
               </div>
             );
           })

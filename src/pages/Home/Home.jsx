@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'; 
-import { Link } from 'react-router-dom';
 import Parcours from '../../components/Parcours/Parcours';
 import Skills from '../../components/Skills/Skllls';
 import Certificates from '../../components/Certifcats/Certificats';
@@ -7,11 +6,12 @@ import Projects from '../../components/Projects/Projects';
 import PhotoWeb from '../../images/PhotoWeb.webp';
 import Loader from '../../components/Loader/Loader';
 import ScrollToTop from '../../components/Top/ScrollToTop';
+import ReactModal from 'react-modal';
 import './Home.css';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -27,7 +27,13 @@ const Home = () => {
       }
     }
   }, []);
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
 
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div className="home pagecontent" >
@@ -40,7 +46,7 @@ const Home = () => {
           <p className="line">Je m'appelle Daniela,</p>
           <p className="line">je suis développeuse web</p>
           <p className="line">passionnée par les technologies frontend.</p>
-          <Link to="/apropos" className='line'>À propos de moi </Link>
+          <button className='line' onClick={openModal}>À propos de moi </button>
         </div>
         <img className="photoweb" src={PhotoWeb} alt="Daniela" loading="lazy" sizes='200' height='200' />
       </div>
@@ -58,6 +64,27 @@ const Home = () => {
       </div>
       <ScrollToTop />
       </div>}
+
+      <ReactModal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        contentLabel="À propos de moi"
+        className="modal-content-home modal-content"
+        overlayClassName="modal-overlay"
+      >
+        <div className="modal-header">
+          <button className="modal-close" onClick={closeModal}>X</button>
+        </div>
+        <div className="modal-body">
+          <p>
+            <strong>Moi en une page :</strong> Une fusion entre une passionnée de code et un amateur de café. Optimisé pour mes longues sessions de travail et les brainstormings nocturnes. 
+            <br />
+            <strong>PS :</strong> Mes bugs sont limités à 0.01% (environ). ☕💻🚀
+          </p>
+          <p className='textsectionh2'> <strong>Mes Projets </strong><br /> " Une sélection de mes ouvres numériques. Garanti sans lignes de code inutiles(ou presque). si ca plante, c'est une fonctionnalité, pas un bug"</p>
+          <p className='textsectionh2'> <strong>Mes Skills</strong><br /> " Mes super-pouvoir de développeur : parler couramment HTML, CSS et JS (avec un légèr accent React). Je maitrise également le Redux-tout (sauvetage de state inclus) "</p>
+        </div>
+      </ReactModal>
     </div>
   );
 };

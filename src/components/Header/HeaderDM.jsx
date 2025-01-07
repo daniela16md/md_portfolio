@@ -16,12 +16,9 @@ function HeaderDM() {
 
   return (
     <header className="headerDM">
-      <div className="headerDMleft">
-        <div className="pheader-container">
-          <h4 className="pheader">DM</h4>
-        </div>
+      <div className="pheader-container">
+        <h4 className="pheader">DM</h4>
       </div>
-      
       <nav className={`divhomebuttons ${menuOpen ? 'open' : ''}`}>
         <ul>
           <li>

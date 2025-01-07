@@ -83,7 +83,22 @@
             "icon": "FaLanguage",
             "color": "green",
             "level": 90
+        },
+        {
+            "id": 13,
+            "name": "AGILE",
+            "icon": " FaCogs",
+            "color": "#61DBFB",
+            "level": 90
+        },
+        {
+            "id": 14,
+            "name": "My top skill",
+            "image": "bugexpert.webp",
+            "color": "green",
+            "level": 100
         }
+
 
 
     ]
