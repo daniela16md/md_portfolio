@@ -31,6 +31,7 @@
     scroll-behavior: smooth;
     overflow-y: auto;
     margin-top: 10%;
+    margin-bottom: 70px;
 }
 .photoweb {
     width: 150px;
@@ -78,8 +79,10 @@
     padding-bottom: 20%;
 }
 .modal-content-home{
-    max-width: 300px;
-    max-height: 200px;
+    padding-top: 40px;
+    max-width: 320px;
+    min-width: auto;
+    max-height: 250px;
     margin: auto;
     max-height: max-content;
 }

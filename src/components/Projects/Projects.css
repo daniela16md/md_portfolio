@@ -5,6 +5,8 @@
 }
 .project-image{
     object-fit: cover;
+    width: 100%;
+    border-radius: 8px;
 }
 .labelfiltre {
     display: none;
@@ -46,10 +48,6 @@
 .project-card:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
-}
-.project-card img {
-    width: 100%;
-    border-radius: 8px;
 }
 .project-card h3 {
     margin-top: 10px;
@@ -93,7 +91,7 @@
 }
 @media (max-width: 767.99px) {
     .projects-page{ 
-     padding: 0;
+        padding: 0;
     } 
     .project-card{
         min-height: 248px;

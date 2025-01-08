@@ -68,7 +68,7 @@ const Footer = () => {
                 <section>
                   <h4>3. Responsabilité</h4>
                   <p>
-                    J’ai conçu ce site avec soin, créativité, et un peu de caféine, mais je décline toute responsabilité si :
+                    J’ai conçu ce site avec soin, créativité, et un peu de cappuccino, mais je décline toute responsabilité si :
                   </p>
                   <ul >
                     <li className='modal-content-mentionsul '>Vous développez une addiction à mes projets.</li>

@@ -82,7 +82,7 @@ body {
     padding-right: 10%;
 }
 .buttoncontact {
-    color: darkcyan; 
+    color: #007272; 
     margin-left: 5px;
 }
 .hamburger {
@@ -92,12 +92,14 @@ body {
     width: 30px;
     height: 21px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
   
 .hamburgerline {
     width: 30px;
     height: 3px;
     background-color: darkcyan;
+    border-radius: 10px;
 }
 @media (max-width: 1024px) {
     .divhomebuttons{ 
@@ -122,23 +124,50 @@ body {
         z-index: 10;
         padding-left: 5%;
         border-radius: 0 0 20px 20px;
-        opacity: 0;
+        opacity: 0;        
+    }
+    .divhomebuttons.open {
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
     }
     .divhomebuttons ul {
         flex-direction: column;
     }
-    .divhomebuttons.open {
+    .hamburger {
         opacity: 1;
-        transition: opacity 2s ease-in-out; 
+        display: flex;
     }
+    .hamburger.open{
+        animation: rotateLine 1s ease-in-out forwards;
+    }
+    @keyframes rotateLine {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(180deg);
+        }
+    }
+    .hamburger.open .hamburgerline:nth-child(1) {
+        transform: rotate(45deg); 
+        position: relative;
+        top: 10px; 
+    }
+    .hamburger.open .hamburgerline:nth-child(2) {
+        opacity: 0; 
+    }
+      
+    .hamburger.open .hamburgerline:nth-child(3) {
+        transform: rotate(-45deg); 
+        position: relative;
+        top: -8px; 
+    }
+      
     .divhomebuttons .nav-link:hover {
         border-bottom: 2px solid darkcyan; 
         padding-bottom: 5px;
         border-top: none;
-    }
-    .hamburger {
-        display: flex; 
-    }  
+    } 
 }
 @media (min-width: 1440px) {
     .headerDM{

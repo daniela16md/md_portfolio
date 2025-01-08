@@ -77,12 +77,12 @@ const Home = () => {
         </div>
         <div className="modal-body">
           <p>
-            <strong>Moi en une page :</strong> Une fusion entre une passionnée de code et un amateur de café. Optimisé pour mes longues sessions de travail et les brainstormings nocturnes. 
+            <strong>Moi en une page :</strong> Une fusion entre une passionnée de code et un amateur de cappuccino. Optimisé pour mes longues sessions de travail et les brainstormings nocturnes. 
             <br />
             <strong>PS :</strong> Mes bugs sont limités à 0.01% (environ). ☕💻🚀
           </p>
-          <p className='textsectionh2'> <strong>Mes Projets </strong><br /> " Une sélection de mes ouvres numériques. Garanti sans lignes de code inutiles(ou presque). si ca plante, c'est une fonctionnalité, pas un bug"</p>
-          <p className='textsectionh2'> <strong>Mes Skills</strong><br /> " Mes super-pouvoir de développeur : parler couramment HTML, CSS et JS (avec un légèr accent React). Je maitrise également le Redux-tout (sauvetage de state inclus) "</p>
+          <p className='textsectionh2'><strong>Mes Projets</strong><br /> " Une sélection de mes ouvres numériques. Garanti sans lignes de code inutiles(ou presque). si ca plante, c'est une fonctionnalité, pas un bug"</p>
+          <p className='textsectionh2'><strong>Mes Skills</strong><br /> " Mes super-pouvoir de développeur : parler couramment HTML, CSS et JS (avec un légèr accent React). Je maitrise également le Redux-tout (sauvetage de state inclus) "</p>
         </div>
       </ReactModal>
     </div>
