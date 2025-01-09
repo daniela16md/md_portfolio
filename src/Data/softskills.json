@@ -46,7 +46,7 @@
             "id": 7,
             "name": "Debug",
             "icon": "FaBug",
-            "color": "#D8D8D8",
+            "color": "#808080",
             "level": 85
         },
         {
@@ -83,13 +83,6 @@
             "icon": "FaLanguage",
             "color": "green",
             "level": 90
-        },
-        {
-            "id": 13,
-            "name": "AGILE",
-            "icon": " FaCogs",
-            "color": "#61DBFB",
-            "level": 95
         }
     ]
 }

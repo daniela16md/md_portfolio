@@ -13,6 +13,25 @@ h2 {
     justify-content: center;
     gap: 20px;
 }
+.shuffle-button {
+    background-color: rgb(228, 228, 231);
+    color: #007272;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+.shuffle-button:hover {
+    text-decoration: underline;
+}
 .skill-card {
     display: flex;
     flex-direction: column;
@@ -21,7 +40,7 @@ h2 {
     border-radius: 8px;
     width: 120px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
    cursor: pointer;
 }
 .skill-card:active {
@@ -39,41 +58,7 @@ h2 {
     font-size: 1rem;
     margin-bottom: 10px;
 }
-.progress-bar {
-    width: 100%;
-    background-color: #fafafa;
-    border-radius: 10px;
-    height: 8px;
-    margin-top: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.progress-fill {
-    height: 100%;
-    border-radius: 10px;
-    width: 0%;  
-}
-.progress-percentage {
-    color: #333;
-}
-.animate-progress {
-    animation: fillProgress 1.5s ease-in-out forwards; 
-}
-@keyframes fillProgress {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 100%;
-    }
-}
-.arrowleft {
-   font-size: 50px;
-   display: flex;
-   justify-content: flex-start;
-   margin-left: 60px;
-   color: gray;
-}
+
 .skillimage {
     width: 50px;
 }
