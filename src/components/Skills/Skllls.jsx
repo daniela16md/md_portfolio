@@ -7,53 +7,40 @@ import skillsData from '../../Data/softskills.json';
 import './Skills.css'
 const Skills = () => {
   const [skills, setSkills] = useState([]);
-  const [progress, setProgress] = useState([]);  
-  const [isLoaded, setIsLoaded] = useState(false); 
-  const [activeSkill, setActiveSkill] = useState(null);
 
   useEffect(() => {
     setSkills(skillsData.skillsData);
   }, []);
 
-  useEffect(() => {
-    if (skills.length > 0) {
-      const progressArray = skills.map((skill) => ({
-        id: skill.id,
-        level: 0, 
-        targetLevel: skill.level, 
-      }));
-      setProgress(progressArray);
+  const handleDragStart = (event, skillId) => {
+    event.dataTransfer.setData('skillId', skillId);
+  };
 
-      skills.forEach((skill, index) => {
-        let currentProgress = 0;
-        const interval = setInterval(() => {
-          if (currentProgress < skill.level) {
-            currentProgress += 1;
-            setProgress(prevProgress => {
-              const newProgress = [...prevProgress];
-              newProgress[index].level = currentProgress;
-              return newProgress;
-            });
-          } else {
-            clearInterval(interval);
-          }
-        }, 20); 
-      });
+  const handleDrop = (event, targetSkillId) => {
+    event.preventDefault();
+    const draggedSkillId = event.dataTransfer.getData('skillId');   
+    const draggedSkillIndex = skills.findIndex(skill => skill.id === parseInt(draggedSkillId));
+    const targetSkillIndex = skills.findIndex(skill => skill.id === parseInt(targetSkillId));
 
-      setIsLoaded(true); 
+    if (draggedSkillIndex !== -1 && targetSkillIndex !== -1) {
+      const updatedSkills = [...skills];
+      const temp = updatedSkills[draggedSkillIndex];
+      updatedSkills[draggedSkillIndex] = updatedSkills[targetSkillIndex];
+      updatedSkills[targetSkillIndex] = temp;
+      setSkills(updatedSkills);
     }
-  }, [skills]);
+  };
 
-  const handleSkillClick = (skillId) => {
-    setActiveSkill(skillId); 
+  const handleDragOver = (event) => {
+    event.preventDefault();  
   };
 
   return (
-    <div className="softskills-container">
+    <div className="softskills-container" onDrop={(event) => handleDrop(event, null)} onDragOver={handleDragOver}>
       <h2 className='sectionh2'> Skills</h2>
       <div className="skills-list">
-        {isLoaded ? (
-          skills.map((skill, index) => {
+        {skills.length > 0 ? (
+          skills.map((skill) => {
             const Icon = skill.icon === 'FaHtml5' ? FaHtml5 :
                         skill.icon === 'FaCss3Alt' ? FaCss3Alt :
                         skill.icon === 'FaSass' ? FaSass :
@@ -70,19 +57,12 @@ const Skills = () => {
                         null;
 
             return (
-              <div key={skill.id} className="skill-card">
+              <div key={skill.id} className="skill-card" draggable="true" onDragStart={(event) => handleDragStart(event, skill.id)}
+                onDrop={(event) => handleDrop(event, skill.id)}
+                onDragOver={handleDragOver}
+                >
                 <Icon className="skill-icon" style={{ color: skill.color }} />
-                <p className="skill-name" onClick={() => handleSkillClick(skill.id)}>{skill.name}</p>
-                <div className="progress-bar">
-                  <div
-                    className={`progress-fill ${activeSkill === skill.id ? 'animate-progress' : ''}`}
-                    style={{
-                      width: `${progress[index]?.level}%`,
-                      backgroundColor: skill.color, 
-                    }}
-                  ></div>
-                </div>
-                <div className="progress-percentage">{progress[index]?.level}%</div>
+                <p className="skill-name" >{skill.name}</p>
               </div>
             );
           })
