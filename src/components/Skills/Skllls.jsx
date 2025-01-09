@@ -71,12 +71,7 @@ const Skills = () => {
 
             return (
               <div key={skill.id} className="skill-card">
-                {skill.image ? (
-                  <img className="skillimage" src={skill.image} alt={skill.alt} />
-                ) : (
-                  Icon && <Icon className="skill-icon" style={{ color: skill.color }} />
-                )}
-
+                <Icon className="skill-icon" style={{ color: skill.color }} />
                 <p className="skill-name" onClick={() => handleSkillClick(skill.id)}>{skill.name}</p>
                 <div className="progress-bar">
                   <div

@@ -76,12 +76,12 @@ function Projects() {
                   <div className='lienssite'>
                     {project.github && (
                       <button className="button-project-link" onClick={() => window.open(project.github, '_blank')} aria-label={`Voir le projet sur GitHub: ${project.name}`}>
-                        <FaGithub /><span className="button-text">Le chantier de mon projet</span>
+                        <FaGithub /><span className="button-text">Le repository Github</span>
                       </button>
                     )}
                     {project.lien && (
                       <button className="button-project-link" onClick={() => openModal(project.lien)} aria-label={`Voir le lien du projet: ${project.name}`}>
-                        <FaLink /> <span className="button-text">Le show en direct</span>
+                        <FaLink /> <span className="button-text">Le lien vers le site</span>
                       </button>
                     )}
                   </div>

@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
 const Home = React.lazy(() => import('./pages/Home/Home'));
 const HeaderDM = React.lazy(() => import('./components/Header/HeaderDM'));
 const Footer = React.lazy(() => import('./components/Foooter/Footer'));
-import Loader from './components/Loader/Loader';
 import './App.css'
 
 function App() {

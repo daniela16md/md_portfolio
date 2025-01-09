@@ -90,14 +90,6 @@
             "icon": " FaCogs",
             "color": "#61DBFB",
             "level": 95
-        },
-        {
-            "id": 14,
-            "name": "My top skill",
-            "image": "bugexpert.webp",
-            "color": "green",
-            "level": 100,
-            "alt": "Photo skill"
         }
     ]
 }
