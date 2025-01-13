@@ -105,6 +105,14 @@
             "alt": "Certificat Google Ateliers Numériques",
             "description1": "Certificat Google Ateliers Numériques",
             "description": "Google Ateliers Numériques : une certification de Google pour maîtriser le marketing digital et les bonnes pratiques web."
+        },
+        {
+            "id": 16,
+            "tittle": "Angular",
+            "image": "Angular.webp",
+            "alt": "Certificat Angular",
+            "description1": "Certificat Google Ateliers Numériques",
+            "description": "Google Ateliers Numériques : une certification de Google pour maîtriser le marketing digital et les bonnes pratiques web."
         }
     ]
 }

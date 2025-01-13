@@ -34,7 +34,7 @@
 }
 .projects-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
     gap: 20px;
     padding: 20px 0;
 }
@@ -43,7 +43,6 @@
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    min-height: 245px;
 }
 .project-card:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
