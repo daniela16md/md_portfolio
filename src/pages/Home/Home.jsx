@@ -77,12 +77,12 @@ const Home = () => {
         </div>
         <div className="modal-body">
           <p>
-            <strong>Moi en une page :</strong> Une fusion entre une passionnée de code et un amateur de cappuccino. Optimisé pour mes longues sessions de travail et les brainstormings nocturnes. 
+            <strong>Qui suis-je ?</strong> Je suis une développeuse web passionné, en constante évolution. Après avoir suivi une formation approfondie en développement web, je suis prêt à mettre en pratique mes compétences acquises pour créer des projets performants et fonctionnels. Mon objectif est d'apprendre, de m'améliorer et de toujours chercher à offrir des solutions de qualité.
             <br />
-            <strong>PS :</strong> Mes bugs sont limités à 0.01% (environ). ☕💻🚀
+            <strong>Note :</strong> Bien que je sois encore en début de parcours professionnel, je mets un point d'honneur à produire un code propre et bien structuré, tout en optimisant l'expérience utilisateur.
           </p>
-          <p className='textsectionh2'><strong>Mes Projets</strong><br /> " Une sélection de mes ouvres numériques. Garanti sans lignes de code inutiles(ou presque). si ca plante, c'est une fonctionnalité, pas un bug"</p>
-          <p className='textsectionh2'><strong>Mes Skills</strong><br /> " Mes super-pouvoir de développeur : parler couramment HTML, CSS et JS (avec un légèr accent React). Je maitrise également le Redux-tout (sauvetage de state inclus) "</p>
+          <p className='textsectionh2'><strong>Mes Projets</strong><br /> "Une sélection de projets réalisés lors de ma formation. Chaque projet a été conçu avec attention, dans le respect des bonnes pratiques du développement, pour offrir une expérience fluide et intuitive." </p>
+          <p className='textsectionh2'><strong>Mes Compétences</strong><br /> "Au cours de ma formation, j'ai acquis de solides bases en HTML, CSS et JavaScript, avec une spécialisation en React. J'ai également appris à gérer l'état des applications avec Redux et à structurer mes projets de manière à faciliter leur évolution." </p>
         </div>
       </ReactModal>
     </div>

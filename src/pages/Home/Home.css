@@ -80,7 +80,7 @@
 }
 .modal-content-home{
     padding-top: 40px;
-    max-width: 320px;
+    max-width: 750px;
     min-width: auto;
     max-height: 250px;
     margin: auto;
@@ -167,6 +167,9 @@
     .divhome {
        gap: 0;
        gap: 20px;
+    }
+    .modal-content-home{
+        max-width: 350px;
     }
 }
 .scroll-to-top {

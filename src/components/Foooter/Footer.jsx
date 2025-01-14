@@ -50,8 +50,8 @@ const Footer = () => {
                   <h4>1. Propriétaire du site</h4>
                   <p>
                     Ce portfolio est la propriété de <strong>Daniela Mattl</strong>, développeuse web en formation,
-                    passionnée de création numérique (et occasionnellement accro au refactoring de code).  
-                    Pour toute question ou collaboration:
+                    passionnée de création numérique.  
+                    Pour toute question ou collaboration: <br />
                     <a href="mailto:danamattl@yahoo.com">contactez-moi</a>.
                   </p>
                 </section>
@@ -61,25 +61,25 @@ const Footer = () => {
                   <p>
                     Ce site est fièrement hébergé par <strong>GitHub Pages</strong>.<br />
                     Adresse : GitHub, Inc., 88 Colin P. Kelly Jr Street, San Francisco, CA 94107, USA.<br />
-                    Un hébergeur fiable, parfait pour déployer des projets (et pour dire à mes bugs qu’ils sont chez eux).
+                    Un hébergeur fiable, parfait pour déployer des projets.
                   </p>
                 </section>
 
                 <section>
                   <h4>3. Responsabilité</h4>
                   <p>
-                    J’ai conçu ce site avec soin, créativité, et un peu de cappuccino, mais je décline toute responsabilité si :
+                    Ce site a été conçu avec soin, créativité et dans le respect des bonnes pratiques de développement. Toutefois, je décline toute responsabilité en cas de :
                   </p>
-                  <ul >
-                    <li className='modal-content-mentionsul '>Vous développez une addiction à mes projets.</li>
-                    <li className='modal-content-mentionsul '>Vous êtes pris d’une envie soudaine de coder à 3h du matin.</li>
+                  <ul>
+                    <li className='modal-content-mentionsul'>Mauvaise utilisation ou interprétation du contenu du site.</li>
+                    <li className='modal-content-mentionsul'>Problèmes techniques indépendants de ma volonté, tels que des erreurs serveur ou des dysfonctionnements du réseau.</li>
                   </ul>
                 </section>
 
                 <section>
                   <h4>4. Données personnelles</h4>
                   <p>
-                    Pas de collecte de données personnelles ici. Pas de cookies non plus (désolée, ils sont déjà dans ma cuisine).
+                    Pas de collecte de données personnelles ici. Pas de cookies non plus.
                     Votre navigation reste anonyme et paisible.
                   </p>
                 </section>
@@ -89,7 +89,6 @@ const Footer = () => {
                   <p>
                     L’ensemble du contenu de ce site, y compris les textes, images, et projets, est ma propriété intellectuelle.<br />
                     Reproduction interdite sans autorisation préalable.
-                    (Mais demander gentiment peut parfois faire des miracles.)
                   </p>
                 </section>
 

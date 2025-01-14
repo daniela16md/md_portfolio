@@ -30,7 +30,7 @@ function HeaderDM() {
       <div className="pheader-container">
         <h4 className="pheader">DM</h4>
       </div>
-      <nav ref={menuRef} className={`divhomebuttons ${menuOpen ? 'open' : ''}`}>
+      <nav ref={menuRef} className={`divhomebuttons ${menuOpen ? 'open' : 'close'}`}>
         <ul>
           <li>
             <Link smooth to="/#projets" onClick={closeMenu} className="nav-link" >Projets</Link>
@@ -44,10 +44,11 @@ function HeaderDM() {
           <li>
             <Link smooth to="/#certificats" onClick={closeMenu} className="nav-link" >Certificats</Link>
           </li>
+          
         </ul>
       </nav>
 
-      <div ref={hamburgerRef} className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+      <div ref={hamburgerRef} className={`hamburger ${menuOpen ? 'open' : 'close'}`} onClick={toggleMenu}>
         <div className="hamburgerline"></div>
         <div className="hamburgerline"></div>
         <div className="hamburgerline"></div>
