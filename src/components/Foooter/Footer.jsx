@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="footer-left">
           &copy; {new Date().getFullYear()} Daniela Mattl. All rights reserved.
         </div>
-        <div className="social-links">
+        <nav className="social-links">
           <a href="https://github.com/daniela16md?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub size={30} className="social-icon" />
           </a>
@@ -26,12 +26,12 @@ const Footer = () => {
           <a href="mailto:danamattl@yahoo.com" aria-label="Email">
             <FaEnvelope size={30} className="social-icon" />
           </a>
-        </div>
+        </nav>
       </section>
-      <div>
+      <section>
         <p className='footer-oups mentions' onClick={openModal}>Mentions légales</p>
         <p className='footer-oups'>Oups, tout en bas, il n'y a rien, mais tu peux remonter facilement grâce à la flèche !</p>
-      </div>
+      </section>
 
             <ReactModal
               isOpen={isModalOpen}
@@ -40,10 +40,10 @@ const Footer = () => {
               className="modal-content-mentions modal-content"
               overlayClassName="modal-overlay"
             >
-              <div className="modal-header">
+              <header className="modal-header">
                 <button className="modal-close" onClick={closeModal}>X</button>
-              </div>
-              <div className="modal-body">
+              </header>
+              <main className="modal-body">
                 <h3>Mentions Légales</h3>
 
                 <section>
@@ -99,7 +99,7 @@ const Footer = () => {
                     je ne suis pas responsable de leur contenu. Naviguez prudemment !
                   </p>
                 </section>
-              </div>
+              </main>
             </ReactModal>
     </footer>
   );

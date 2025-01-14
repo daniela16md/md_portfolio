@@ -74,7 +74,7 @@ function Projects() {
   };
 
   return (
-    <div className="projects-page" onDrop={(event) => handleDrop(event, null)} onDragOver={handleDragOver}>
+    <section className="projects-page" onDrop={(event) => handleDrop(event, null)} onDragOver={handleDragOver}>
       <h2 className="sectionh2">Mes Projets</h2>
 
       <div className="filters">
@@ -87,10 +87,10 @@ function Projects() {
         </select>
       </div>
 
-      <div className={`projects-list ${showProjects ? 'drop-in' : ''}`}>
+      <section className={`projects-list ${showProjects ? 'drop-in' : ''}`}>
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project, index) => (
-            <div
+            <article
               key={project.id}
               className="project-card"
               style={{
@@ -129,7 +129,7 @@ function Projects() {
                   </div>
                 </div>
               ) : (
-                <div onClick={() => handleProjectClick(project)}>
+                <article onClick={() => handleProjectClick(project)}>
                   <img
                     src={project.image}
                     alt={`Image du projet ${project.name}`}
@@ -139,14 +139,14 @@ function Projects() {
                     height="150"
                   />
                   <h3>{project.name}</h3>
-                </div>
+                </article>
               )}
-            </div>
+            </article>
           ))
         ) : (
           <p>Aucun projet trouvé pour cette technologie.</p>
         )}
-      </div>
+      </section>
 
       <ReactModal
         isOpen={isModalOpen}
@@ -159,7 +159,7 @@ function Projects() {
         <button className="modal-close" onClick={closeModal}>X</button>
         <iframe src={currentUrl} width="100%" height="600px" title="Project Site" />
       </ReactModal>
-    </div>
+    </section>
   );
 }
 

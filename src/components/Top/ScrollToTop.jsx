@@ -29,12 +29,13 @@ const ScrollToTop = () => {
   };
 
   return (
-    <div
+    <button
       className={`scroll-to-top ${visible ? 'visible' : ''}`}
       onClick={scrollToTop}
+      aria-label="Retour en haut de la page"
     >
       <FaArrowUp size={20} />
-    </div>
+    </button>
   );
 };
 

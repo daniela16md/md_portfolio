@@ -25,9 +25,8 @@ function Certificates() {
   };
 
   return (
-    <div className="certificats-container">
-      <h2 className='sectionh2'>Mes Certificats</h2>
-
+    <section className="certificats-container">
+        <h2 className='sectionh2'>Mes Certificats</h2>
       <Swiper
         ref={swiperRef} 
         spaceBetween={30} 
@@ -43,14 +42,14 @@ function Certificates() {
       >
         {certificates.certificats.map((certificat) => (
           <SwiperSlide key={certificat.id} onClick={() => openModal(certificat)}>
-            <div className="certificat-card">
+            <article className="certificat-card">
               <img 
                 src={certificat.image} 
                 alt={certificat.alt || 'Certificat'}
                 className="certificat-image" 
               />
               {certificat.tittle && <h3 className="certificat-title">{certificat.tittle}</h3>}
-            </div>
+            </article>
           </SwiperSlide>
         ))}
       </Swiper>
@@ -72,7 +71,7 @@ function Certificates() {
         overlayClassName="modal-overlay"
       >
         {currentCertificat && (
-          <div className="modal-body">
+          <section className="modal-body">
             <button className="close-modal" onClick={closeModal}>X</button>
             <img 
               src={currentCertificat.image} 
@@ -84,10 +83,10 @@ function Certificates() {
             />
             <h3>{currentCertificat.tittle}</h3>
             <p>{currentCertificat.description || 'Certificat obtenu en cours de formation Openclassrooms.'}</p>
-          </div>
+          </section>
         )}
       </Modal>
-    </div>
+    </section>
   );
 }
 

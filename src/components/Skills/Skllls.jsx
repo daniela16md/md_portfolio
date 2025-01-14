@@ -23,7 +23,7 @@ const Skills = () => {
   };
 
   return (
-    <div className="softskills-container">
+    <section className="softskills-container">
       <h2 className="sectionh2">Skills</h2>
       <button className="shuffle-button" onClick={shuffleSkills}>Réorganiser les compétences <FaRandom  /></button>
       <div className="skills-list">
@@ -45,21 +45,21 @@ const Skills = () => {
                         null;
 
             return (
-              <div key={skill.id} className="skill-card">
+              <article key={skill.id} className="skill-card">
               {Icon ? (
                 <Icon className="skill-icon" style={{ color: skill.color }} />
               ) : (
                 <p>Icône introuvable</p>  
               )}
               <p className="skill-name">{skill.name}</p>
-            </div>
+            </article>
             );
           })
         ) : (
           <p>Chargement...</p>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -40,14 +40,14 @@ function Parcours() {
                     </div>
 
                     {activeDiplome ? (
-                        <div className="carrousel-item-details carrousel-item" onClick={closeDiplomeDetails}>
+                        <article className="carrousel-item-details carrousel-item" onClick={closeDiplomeDetails}>
                         <p className='carrousel-item-text'>{activeDiplome.description}</p>
-                        </div>
+                        </article>
                     ) : (
-                        <div className="carrousel-item carrousel-item-details" onClick={() => handleDiplomeClick(diplome)}>
+                        <article className="carrousel-item carrousel-item-details" onClick={() => handleDiplomeClick(diplome)}>
                             <h3 className='carrousel-item-text'>{diplome.name}</h3>
                             <p className='carrousel-item-text'> <strong>Année :</strong> {diplome.year}</p>
-                        </div>
+                        </article>
                     )}
 
                     <div className="arrow right" onClick={handleNext}>

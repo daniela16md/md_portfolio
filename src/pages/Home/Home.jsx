@@ -39,8 +39,8 @@ const Home = () => {
     <div className="home pagecontent" >
       {loading && <Loader />} 
 
-     {!loading && <div>
-      <div className='divhome'>
+     {!loading && <section>
+      <header className='divhome'>
         <div className='divhomediv fade-in delay-0s'>
           <h1 className='line'>Bonjour,</h1>
           <p className="line">Je m'appelle Daniela,</p>
@@ -48,22 +48,24 @@ const Home = () => {
           <p className="line">passionnée par les technologies frontend.</p>
           <p className='button-line line' onClick={openModal}>À propos de moi </p>
         </div>
-        <img className="photoweb" src={PhotoWeb} alt="Daniela" loading="lazy" sizes='200' height='200' />
-      </div>
-      <div id="projets" className="fade-in delay-1s">
+        <figure>
+          <img className="photoweb" src={PhotoWeb} alt="Daniela" loading="lazy" sizes='200' height='200' />
+        </figure>
+      </header>
+      <section id="projets" className="fade-in delay-1s">
         {!loading && <Projects />}
-      </div>
-      <div id="skills" className="fade-in delay-2s">
+      </section>
+      <section id="skills" className="fade-in delay-2s">
         <Skills />
-      </div >
-      <div id="parcours" className="fade-in delay-3s">
+      </section >
+      <section id="parcours" className="fade-in delay-3s">
         <Parcours />
-        </div>
-      <div id="certificats" className="fade-in delay-4s">
+        </section>
+      <section id="certificats" className="fade-in delay-4s">
         <Certificates />
-      </div>
+      </section>
       <ScrollToTop />
-      </div>}
+      </section>}
 
       <ReactModal
         isOpen={isModalOpen}
