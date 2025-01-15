@@ -39,8 +39,8 @@ const Home = () => {
     <div className="home pagecontent" >
       {loading && <Loader />} 
 
-     {!loading && <section>
-      <header className='divhome'>
+     {!loading && <div>
+      <div className='divhome'>
         <div className='divhomediv fade-in delay-0s'>
           <h1 className='line'>Bonjour,</h1>
           <p className="line">Je m'appelle Daniela,</p>
@@ -51,7 +51,7 @@ const Home = () => {
         <figure>
           <img className="photoweb" src={PhotoWeb} alt="Daniela" loading="lazy" sizes='200' height='200' />
         </figure>
-      </header>
+      </div>
       <section id="projets" className="fade-in delay-1s">
         {!loading && <Projects />}
       </section>
@@ -65,7 +65,7 @@ const Home = () => {
         <Certificates />
       </section>
       <ScrollToTop />
-      </section>}
+      </div>}
 
       <ReactModal
         isOpen={isModalOpen}
@@ -85,6 +85,7 @@ const Home = () => {
           </p>
           <p className='textsectionh2'><strong>Mes Projets</strong><br /> "Une sélection de projets réalisés lors de ma formation. Chaque projet a été conçu avec attention, dans le respect des bonnes pratiques du développement, pour offrir une expérience fluide et intuitive." </p>
           <p className='textsectionh2'><strong>Mes Compétences</strong><br /> "Au cours de ma formation, j'ai acquis de solides bases en HTML, CSS et JavaScript, avec une spécialisation en React. J'ai également appris à gérer l'état des applications avec Redux et à structurer mes projets de manière à faciliter leur évolution." </p>
+          
         </div>
       </ReactModal>
     </div>

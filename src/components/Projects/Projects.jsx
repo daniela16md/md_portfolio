@@ -12,7 +12,6 @@ function Projects() {
   const [currentUrl, setCurrentUrl] = useState('');
   const [showProjects, setShowProjects] = useState(false);
   const [activeProject, setActiveProject] = useState(null);
-  const [projectList, setProjectList] = useState(projects.projects); 
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -26,10 +25,10 @@ function Projects() {
   };
 
   const filteredProjects = selectedTech
-    ? projectList.filter(project => project.technologies.includes(selectedTech))
-    : projectList;
+    ? projects.projects.filter(project => project.technologies.includes(selectedTech))
+    : projects.projects;
 
-  const techOptions = ['HTML', 'CSS', 'JS', 'React', 'NodeJS', 'Redux', 'SEO', 'Lighthouse', 'SCSS'];
+  const techOptions = ['HTML', 'CSS', 'SCSS', 'JS', 'React', 'Redux', 'SEO'];
 
   const openModal = (url) => {
     setCurrentUrl(url);
@@ -49,32 +48,8 @@ function Projects() {
     setActiveProject(null);
   };
 
-  const handleDragStart = (event, projectId) => {
-    event.dataTransfer.setData('projectId', projectId);
-  };
-
-  const handleDrop = (event, targetProjectId) => {
-    event.preventDefault();
-    const draggedProjectId = event.dataTransfer.getData('projectId');
-    const draggedProjectIndex = projectList.findIndex(project => project.id === parseInt(draggedProjectId));
-    const targetProjectIndex = projectList.findIndex(project => project.id === parseInt(targetProjectId));
-
-    if (draggedProjectIndex !== -1 && targetProjectIndex !== -1) {
-      const updatedProjects = [...projectList];
-      const temp = updatedProjects[draggedProjectIndex];
-      updatedProjects[draggedProjectIndex] = updatedProjects[targetProjectIndex];
-      updatedProjects[targetProjectIndex] = temp;
-      setProjectList(updatedProjects);
-      
-    }
-  };
-
-  const handleDragOver = (event) => {
-    event.preventDefault(); 
-  };
-
   return (
-    <section className="projects-page" onDrop={(event) => handleDrop(event, null)} onDragOver={handleDragOver}>
+    <section className="projects-page" >
       <h2 className="sectionh2">Mes Projets</h2>
 
       <div className="filters">
@@ -96,10 +71,6 @@ function Projects() {
               style={{
                 animationDelay: `${(index + 1) * 1}s`,
               }}
-              draggable="true"
-              onDragStart={(event) => handleDragStart(event, project.id)}
-              onDrop={(event) => handleDrop(event, project.id)}
-              onDragOver={handleDragOver}
             >
               {activeProject && activeProject.id === project.id ? (
                 <div className="project-details" onClick={closeProjectDetails}>
