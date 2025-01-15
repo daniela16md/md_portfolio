@@ -5,7 +5,6 @@ import Certificates from '../../components/Certifcats/Certificats';
 import Projects from '../../components/Projects/Projects';
 import PhotoWeb from '../../images/Daniela.webp';
 import Loader from '../../components/Loader/Loader';
-import ScrollToTop from '../../components/Top/ScrollToTop';
 import ReactModal from 'react-modal';
 import './Home.css';
 
@@ -40,31 +39,30 @@ const Home = () => {
       {loading && <Loader />} 
 
      {!loading && <div>
-      <div className='divhome'>
-        <div className='divhomediv fade-in delay-0s'>
-          <h1 className='line'>Bonjour,</h1>
-          <p className="line">Je m'appelle Daniela,</p>
-          <p className="line">je suis développeuse web</p>
-          <p className="line">passionnée par les technologies frontend.</p>
-          <p className='button-line line' onClick={openModal}>À propos de moi </p>
+        <div className='divhome'>
+          <div className='divhomediv fade-in delay-0s'>
+            <h1 className='line'>Bonjour,</h1>
+            <p className="line">Je m'appelle Daniela,</p>
+            <p className="line">je suis développeuse web</p>
+            <p className="line">passionnée par les technologies frontend.</p>
+            <p className='button-line line' onClick={openModal}>À propos de moi </p>
+          </div>
+          <figure>
+            <img className="photoweb" src={PhotoWeb} alt="Daniela" loading="lazy" sizes='200' height='200' />
+          </figure>
         </div>
-        <figure>
-          <img className="photoweb" src={PhotoWeb} alt="Daniela" loading="lazy" sizes='200' height='200' />
-        </figure>
-      </div>
-      <section id="projets" className="fade-in delay-1s">
-        {!loading && <Projects />}
-      </section>
-      <section id="skills" className="fade-in delay-2s">
-        <Skills />
-      </section >
-      <section id="parcours" className="fade-in delay-3s">
-        <Parcours />
+        <section id="projets" className="fade-in delay-1s">
+          {!loading && <Projects />}
         </section>
-      <section id="certificats" className="fade-in delay-4s">
-        <Certificates />
-      </section>
-      <ScrollToTop />
+        <section id="skills" className="fade-in delay-2s">
+          <Skills />
+        </section >
+        <section id="parcours" className="fade-in delay-3s">
+          <Parcours />
+          </section>
+        <section id="certificats" className="fade-in delay-4s">
+          <Certificates />
+        </section>
       </div>}
 
       <ReactModal

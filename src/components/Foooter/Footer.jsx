@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'; 
 import { FaGithub, FaEnvelope } from 'react-icons/fa'; 
 import ReactModal from 'react-modal'; 
+import ScrollToTop from '../../components/Top/ScrollToTop';
 import './Footer.css';  
 
 const Footer = () => {
@@ -14,6 +15,7 @@ const Footer = () => {
   };
   return (
     <footer className="footer fade-in delay-3s">
+      <ScrollToTop />
       <section className='footerrow'>
         <div className="footer-left">
           &copy; {new Date().getFullYear()} Daniela Mattl. All rights reserved.

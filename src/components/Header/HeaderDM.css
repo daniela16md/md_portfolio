@@ -89,14 +89,13 @@ body {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
     height: 21px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
   
 .hamburgerline {
-    width: 30px;
+    width: 25px;
     height: 3px;
     background-color: darkcyan;
     border-radius: 10px;
