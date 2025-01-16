@@ -25,7 +25,7 @@ const Skills = () => {
   return (
     <section className="softskills-container">
       <h2 className="sectionh2">Skills</h2>
-      <button className="shuffle-button" onClick={shuffleSkills}>Réorganiser les compétences <FaRandom  /></button>
+      <p className="shuffle-button" onClick={shuffleSkills}>Réorganiser les compétences <FaRandom  /></p>
       <div className="skills-list">
         {skills.length > 0 ? (
           skills.map((skill) => {

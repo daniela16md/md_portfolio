@@ -83,7 +83,6 @@ const Home = () => {
           </p>
           <p className='textsectionh2'><strong>Mes Projets</strong><br /> "Une sélection de projets réalisés lors de ma formation. Chaque projet a été conçu avec attention, dans le respect des bonnes pratiques du développement, pour offrir une expérience fluide et intuitive." </p>
           <p className='textsectionh2'><strong>Mes Compétences</strong><br /> "Au cours de ma formation, j'ai acquis de solides bases en HTML, CSS et JavaScript, avec une spécialisation en React. J'ai également appris à gérer l'état des applications avec Redux et à structurer mes projets de manière à faciliter leur évolution." </p>
-          
         </div>
       </ReactModal>
     </div>

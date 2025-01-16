@@ -3,13 +3,11 @@
   padding: 50px;
   margin-bottom: 20px;
 }
-  
 .certificats-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-  
 .certificat-card {
   display: flex;
   flex-direction: column;
@@ -21,25 +19,21 @@
   cursor:grab;
   margin-left: 15%;
 }
-  
 .certificat-card:hover {
   transform: scale(1.05);
 }
-  
 .certificat-image {
   height: auto;
   border-radius: 5px;
   object-fit: cover;
   max-height: 150px;
 }
-  
 .certificat-title {
   margin-top: 10px;
   font-weight: bold;
   font-size: 1rem;
   color: #333;
 }
-  
 .swiper-container {
   width: 100%;
   padding-bottom: 50px;
@@ -52,17 +46,14 @@
   flex-direction: column;
   justify-content: center;
 }
-
 .modal-body {
   text-align: center;
 }
-
 .modal-certificat-image {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
-
 .close-modal {
   position: absolute;
   top: 10px;
@@ -74,7 +65,6 @@
   cursor: pointer;
   border-radius: 5px;
 }
-
 @media (max-width: 768px) {
   .certificats-container {
     padding: 40px;
@@ -82,7 +72,6 @@
   .certificat-card {
     width: 70%;
   }
-
   .certificat-title {
     font-size: 15px;
   }
@@ -91,12 +80,10 @@
     height: 400px;
   }
 }
-
 @media (min-width: 1024px) {
   .certificat-card {
     padding: 15px;
   }
-
   .certificat-title {
     font-size: 18px;
   }
@@ -105,7 +92,6 @@
   display: flex;
   justify-content: space-evenly;
 }
-
 @media (max-width: 400px) {
   .certificat-card{
     width: 70%;

@@ -53,8 +53,7 @@
     .footerrow,
     .footer-oups {
         flex-direction: column;
-        padding: 0 0 10px 10px;
-        font-size: 16px;
+        font-size: 14px;
     }
     .social-links{
         margin-top: 10px;
@@ -65,7 +64,7 @@
 }
 .scroll-to-top {
     position: fixed;
-    bottom: 35%;
+    bottom: 45%;
     right: 30px;
     background-color: #007272;
     color: white;
