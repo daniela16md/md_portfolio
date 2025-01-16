@@ -77,7 +77,7 @@ const Home = () => {
         </div>
         <div className="modal-body">
           <p>
-            <strong>Qui suis-je ?</strong> Je suis une développeuse web passionné, en constante évolution. Après avoir suivi une formation approfondie en développement web, je suis prêt à mettre en pratique mes compétences acquises pour créer des projets performants et fonctionnels. Mon objectif est d'apprendre, de m'améliorer et de toujours chercher à offrir des solutions de qualité.
+            <strong>Qui suis-je ?</strong> Moi, c'est Daniela, une développeuse web passionné, en constante évolution. Après avoir suivi une formation approfondie en développement web, je suis prêt à mettre en pratique mes compétences acquises pour créer des projets performants et fonctionnels. Mon objectif est d'apprendre, de m'améliorer et de toujours chercher à offrir des solutions de qualité.
             <br />
             <strong>Note :</strong> Bien que je sois encore en début de parcours professionnel, je mets un point d'honneur à produire un code propre et bien structuré, tout en optimisant l'expérience utilisateur.
           </p>
