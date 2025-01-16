@@ -15,14 +15,6 @@
     z-index: 1000; 
     height: 60px; 
 }
-.headerDMleft {
-    display: flex;
-    justify-content: space-between;
-    font-size: 24px;
-    font-weight: bold;
-    gap: 20px;
-    width: 20%;
-}
 .pheader {
     margin-left: 70px;
     color:#007272;
@@ -127,17 +119,10 @@ body {
     }
     .divhomebuttons.open {
         opacity: 1;
-        transition: opacity 1s ease-in-out;
+        transition: transform 0.4s ease, top 0.4s ease, opacity 1s ease;
     }
     .divhomebuttons.close{
-        transition: opacity 1s ease-in-out;
         opacity: 0;
-    }
-    .hamburger.close{
-        animation: rotateLineclose 1s ease-in-out forwards;
-    }
-    @keyframes opacityclose {
-        
     }
     .divhomebuttons ul {
         flex-direction: column;
@@ -146,27 +131,9 @@ body {
         opacity: 1;
         display: flex;
     }
-    .hamburger.open{
-        animation: rotateLine 1s ease-in-out forwards;
-    }
-    @keyframes rotateLine {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(180deg);
-        }
-    }
-    @keyframes rotateLineclose {
-        0% {
-          transform: rotate(180deg);
-        }
-        100% {
-          transform: rotate(0deg);
-        }
-    }
     .hamburger.open .hamburgerline:nth-child(1) {
         transform: rotate(45deg); 
+        transition: transform 0.4s ease, top 0.4s ease, opacity 0.4s ease;
         position: relative;
         top: 10px; 
     }
@@ -176,10 +143,23 @@ body {
       
     .hamburger.open .hamburgerline:nth-child(3) {
         transform: rotate(-45deg); 
+        transition: transform 0.4s ease, top 0.4s ease, opacity 0.4s ease;
         position: relative;
         top: -8px; 
     }
-      
+    .hamburger.close .hamburgerline:nth-child(1) {
+        transform: rotate(Odeg); 
+        transition: transform 0.4s ease, top 0.4s ease, opacity 0.4s ease;
+        position: relative;
+    }
+    .hamburger.close .hamburgerline:nth-child(2) {
+        opacity: 1; 
+    }
+    .hamburger.close .hamburgerline:nth-child(3) {
+        transform: rotate(0deg); 
+        transition: transform 0.4s ease, top 0.4s ease, opacity 0.4s ease;
+        position: relative;
+    }
     .divhomebuttons .nav-link:hover {
         border-bottom: 2px solid darkcyan; 
         padding-bottom: 5px;
