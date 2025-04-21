@@ -2,7 +2,7 @@
   "name": "my_portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://daniela16md.github.io/my_portfolio",
+  "homepage": "https://daniela16md.github.io/md_portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
