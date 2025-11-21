@@ -42,6 +42,7 @@ const Home = () => {
         <div className='divhome'>
           <div className='divhomediv fade-in delay-0s'>
             <h1 className='line'>Bonjour,</h1>
+            
             <p className="line">Je m'appelle Daniela,</p>
             <p className="line">je suis développeuse web</p>
             <p className="line">passionnée par les technologies frontend.</p>
