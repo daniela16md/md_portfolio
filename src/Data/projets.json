@@ -4,7 +4,7 @@
             "id": 1,
             "name": "Riding Cities",
             "technologies": "Html, css",
-            "image": "/my_portfolio/ridingcities.webp",
+            "image": "/md_portfolio/ridingcities.webp",
             "github": "https://github.com/daniela16md/riding_cities.git",
             "text": "Premiers pas dans le langage HTML"
         },
@@ -12,7 +12,7 @@
             "id": 2,
             "name": "Booki",
             "technologies": "HTML & CSS",
-            "image": "/my_portfolio/booki.webp",
+            "image": "/md_portfolio/booki.webp",
             "lien": "https://daniela16md.github.io/projet3/",
             "github": "https://github.com/daniela16md/projet3.git",
             "text": "Création d'un site d'une agence de voyage."
@@ -21,7 +21,7 @@
             "id": 3,
             "name": "Oh my food",
             "technologies": "HTML & SCSS",
-            "image":"/my_portfolio/ohmyfood.webp",
+            "image":"/md_portfolio/ohmyfood.webp",
             "lien": "https://daniela16md.github.io/danielaohmyfood/",
             "github": "https://github.com/daniela16md/danielaohmyfood.git",
             "text": "Développer un site mobile-first qui répertorie les menus de restaurants."
@@ -30,7 +30,7 @@
             "id": 4,
             "name": "Print-it",
             "technologies": "HTML & JS",
-            "image": "/my_portfolio/printit.webp" ,
+            "image": "/md_portfolio/printit.webp" ,
             "lien": "https://daniela16md.github.io/daniela_print_it-soutenance/",
             "github": "https://github.com/daniela16md/daniela_print_it-soutenance.git",
             "text": "Création d'une page web pour une société d'imprimerie."
@@ -39,7 +39,7 @@
             "id": 5,
             "name": "Sophie Bluel",
             "technologies": "HTML & CSS & JS",
-            "image":"/my_portfolio/sophiebluel.webp" ,
+            "image":"/md_portfolio/sophiebluel.webp" ,
             "github": "https://github.com/daniela16md/Sophie-bluel_danielamd.git",
             "text": "Création d'une page web dynamique pour le site internet d'une architecte d'intérieur."
         },
@@ -47,7 +47,7 @@
             "id": 6,
             "name":  "Nina-Carducci",
             "technologies": "SEO, accessibilité, Lighthouse, Wave",
-            "image":"/my_portfolio/ninacarducci.webp" ,
+            "image":"/md_portfolio/ninacarducci.webp" ,
             "lien": "https://daniela16md.github.io/projet_n-8/",
             "github": "https://github.com/daniela16md/projet_n-8.git",
             "text": "Optimisation du référencement du site de Nina Carducci."
@@ -56,7 +56,7 @@
             "id": 7,
             "name": "Kasa",
             "technologies": "React, CRA et SCSS",
-            "image": "/my_portfolio/kasa.webp" ,
+            "image": "/md_portfolio/kasa.webp" ,
             "github": "https://github.com/daniela16md/projet_7.git",
             "text": "Création d'une application web de location immobilière."
         },
@@ -64,7 +64,7 @@
             "id": 8,
             "name": "724 Events",
             "technologies": "React",
-            "image": "/my_portfolio/724events.webp" ,
+            "image": "/md_portfolio/724events.webp" ,
             "github": "https://github.com/daniela16md/projet9.git",
             "text": "Site internet d'une agence événementiel, deboggage du site."
         },
@@ -72,7 +72,7 @@
             "id": 9,
             "name": "ArgentBank",
             "technologies": "React & Redux & NodeJS",
-            "image":"/my_portfolio/argentbank.webp" ,
+            "image":"/md_portfolio/argentbank.webp" ,
             "github": "https://github.com/daniela16md/projetargentbanck.git",
             "text": "Création d'une application bancaire avec React."
         }

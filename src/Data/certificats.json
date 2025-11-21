@@ -3,14 +3,14 @@
         {
             "id": 1,
             "tittle": "Algorithmes",
-            "image":"https://daniela16md.github.io/my_portfolio/algorithmes.webp",
+            "image":"https://daniela16md.github.io/md_portfolio/algorithmes.webp",
             "alt": "Certificat Algorithmes",
             "description": "Algorithmes : la science des solutions élégantes. Trouver la meilleure approche, c'est tout un art."
         },
         {
             "id": 2,
             "tittle": "Angular",
-            "image": "https://daniela16md.github.io/my_portfolio/Angular.webp",
+            "image": "https://daniela16md.github.io/md_portfolio/Angular.webp",
             "alt": "Certificat Angular",
             "description1": "Certificat Angular",
             "description": "Angular : une plateforme robuste pour créer des applications web dynamiques et performantes."
@@ -18,56 +18,56 @@
         {
             "id": 3,
             "tittle": "Animations CSS",
-            "image":"https://daniela16md.github.io/my_portfolio/animations.webp",
+            "image":"https://daniela16md.github.io/md_portfolio/animations.webp",
             "alt": "Certificat Animations CSS",
             "description": "Animations CSS : j'ajoute un peu de mouvement à mes projets avec des animations fluides et élégantes."
         },
         {
             "id": 4,
             "tittle": "Api Rest",
-            "image":"https://daniela16md.github.io/my_portfolio/API.webp",
+            "image":"https://daniela16md.github.io/md_portfolio/API.webp",
             "alt": "Certificat API Rest",
             "description": "API Rest : transformer des données en actions ! Parce qu’un site moderne, c’est aussi un site connecté."
         },
         {
             "id": 5,
             "tittle": "Aplication React",
-            "image": "https://daniela16md.github.io/my_portfolio/React.webp",
+            "image": "https://daniela16md.github.io/md_portfolio/React.webp",
             "alt": "Certificat Aplication React",
             "description": "React : l’art de rendre les interfaces réactives, dynamiques et toujours à la page."
         },
         {
             "id": 6,
             "tittle": "Corrigez vos bugs",
-            "image": "https://daniela16md.github.io/my_portfolio/Bugs.webp",
+            "image": "https://daniela16md.github.io/md_portfolio/Bugs.webp",
             "alt": "Certificat Corrigez vos bugs",
             "description": "Chaque bug est une opportunité d’apprentissage. Analyser et résoudre les bugs dans les sites web pour améliorer la stabilité et assurer une expérience utilisateur sans interruptions."
         },
         {
             "id": 7,
             "tittle": "Figma",
-            "image":"https://daniela16md.github.io/my_portfolio/Figma.webp",
+            "image":"https://daniela16md.github.io/md_portfolio/Figma.webp",
             "alt": "Certificat Figma",
             "description": "Figma : la magie des designs collaboratifs. Parce que créer c’est bien, mais créer ensemble c’est encore mieux."
         },
         {
             "id": 8,
             "tittle": "Formation",
-            "image":"https://daniela16md.github.io/my_portfolio/formation.webp",
+            "image":"https://daniela16md.github.io/md_portfolio/formation.webp",
             "alt": "Certificat Formation",
             "description": "Une formation complète pour transformer des idées en code. Une base solide pour construire l’avenir."
         },
         {
             "id": 9,
             "tittle": "Git et GitHub",
-            "image":"https://daniela16md.github.io/my_portfolio/Github.webp",
+            "image":"https://daniela16md.github.io/md_portfolio/Github.webp",
             "alt": "Certificat Git et GitHub",
             "description": "Git & GitHub : pour garder une trace de tout ce que j’ai codé. Un contrôle total sur chaque version !"
         },
         {
             "id": 10,
             "tittle": "Google",
-            "image": "https://daniela16md.github.io/my_portfolio/google.webp",
+            "image": "https://daniela16md.github.io/md_portfolio/google.webp",
             "alt": "Certificat Google Ateliers Numériques",
             "description1": "Certificat Google Ateliers Numériques",
             "description": "Google Ateliers Numériques : une certification de Google pour maîtriser le marketing digital et les bonnes pratiques web."
@@ -75,41 +75,41 @@
         {
             "id": 11,
             "tittle": "HTML et CSS",
-            "image":"https://daniela16md.github.io/my_portfolio/HTML.webp",
+            "image":"https://daniela16md.github.io/md_portfolio/HTML.webp",
             "alt": "Certificat HTML et CSS",
             "description": "HTML et CSS : parce que tout bon site web commence par une structure et une jolie présentation."
         },
         {
             "id": 12,
             "tittle": "Java-script",
-            "image":"https://daniela16md.github.io/my_portfolio/Javascript.webp",
+            "image":"https://daniela16md.github.io/md_portfolio/Javascript.webp",
             "alt": "Certificat JavaScript",
             "description": "JavaScript : quand la magie du web rencontre la puissance du code. Rien ne résiste à un bon script."
         },
         {
             "id": 13,
             "tittle": "SASS",
-            "image": "https://daniela16md.github.io/my_portfolio/Sass.webp",
+            "image": "https://daniela16md.github.io/md_portfolio/Sass.webp",
             "alt": "Certificat SASS",
             "description": "SASS : pour des styles plus élégants et modulaires, parce que le CSS, c'est bien, mais SASS, c’est mieux."
         },
         {
             "id": 14,
             "tittle": "SEO",
-            "image": "https://daniela16md.github.io/my_portfolio/SEO.webp",
+            "image": "https://daniela16md.github.io/md_portfolio/SEO.webp",
             "alt": "Certificat SEO",
             "description": "Optimiser la visibilité des sites web en appliquant des techniques éprouvées pour améliorer leur classement sur les moteurs de recherche, comme Google."
         }, {
             "id": 15,
             "tittle": "Site web",
-            "image":"https://daniela16md.github.io/my_portfolio/online.webp",
+            "image":"https://daniela16md.github.io/md_portfolio/online.webp",
             "alt": "Certificat Site web",
             "description": "Déployer des sites web, en assurant leur mise en ligne correcte, sécurisée et optimisée pour un accès fluide par les utilisateurs."
         },
         {
             "id": 16,
             "tittle": "Tests techniques",
-            "image": "https://daniela16md.github.io/my_portfolio/TestsTechniques.webp",
+            "image": "https://daniela16md.github.io/md_portfolio/TestsTechniques.webp",
             "alt": "Certificat Tests techniques",
             "description": "Réaliser des tests techniques pour assurer la qualité et la performance des applications et sites web, en détectant et en corrigeant les problèmes avant leur déploiement."
         }
